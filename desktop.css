@@ -11,7 +11,7 @@ main {
     border-right: 3px solid var(--line-color);
 }
 .description {
-    padding: 25px;
+    padding: 25px 30px;
 }
 .contact {
     border-top-width: 3px;
