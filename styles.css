@@ -120,15 +120,15 @@ main .description .img-container {
 }
 .list {
     width: 100%;
-    height: 30px;
+    height: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-	aling-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
     list-style: none;
 	border-top: 1.5px solid var(--line-color);
 	border-bottom: 1.5px solid var(--line-color);
 }
 .list__item {
+    padding: 5px;
     display: grid;
     place-items: center;
     font-size: 1.4ch;
@@ -136,6 +136,7 @@ main .description .img-container {
     text-align: center;
     border-left: .5px solid var(--line-color);
     border-right: .5px solid var(--line-color);
+    border-bottom: 2px solid var(--line-color);
 }
 .skils-section div {
     width: 100%;
@@ -146,13 +147,14 @@ main .description .img-container {
 .skils-section div button {
     width: 100%;
     height: 100%;
+    margin-top: 4px;
     font-size: 2.3ch;
     font-weight: 700;
     text-align: center;
     color: var(--font-color);
     background: var(--primary-color);
     border: 2px solid var(--line-color);
-    border-top-width: 1px;
+    /* border-top-width: 1px; */
     transition: box-shadow .5s ease;
 }
 .skils-section div button:hover {
