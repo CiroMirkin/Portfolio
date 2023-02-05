@@ -7,57 +7,45 @@
     <title>C.Mirkin - Portafolio</title>
 
     <link rel="stylesheet" href="./styles.css">
-   <!-- <link href="https://unpkg.com/pattern.css" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300&display=swap" rel="stylesheet">
+
 </head>
-<body>
-    <header class="tip">Ciro Mirkin - Desarrollador web frontend</header>
-
-    <main class="main">
-        <section class="section">
-            <h1 class="title">Ciro Mirkin</h1>
-            <p class="description">Hola, soy programador hace ya tres años y me dedico al desarrollo de páginas, sitio y aplicaciones web.</p>
-            <p class="description">Me centro sobre todo en el frontend (la parte visual y funcional de un sitio) pero también tengo conocimientos básicos de backend (base de datos y su administración).</p>
-            <a href="https://github.com/CiroMirkin" class="btn">Github</a>
-            <a href="http://cm-apuntes.netlify.app" class="btn">Mis apuntes</a>
+<body class="theme--light">
+    <header class="page-header">Ciro Mirkin</header>
+    <main>
+        <section class="description">
+            <p>Soy programador Frontend, me gusta programar en Javascript y hace tres años que lo hago.</p>
+            <p>A lo largo de este tiempo fui escribiendo <a href="https://cm-apuntes.netlify.app/">apuntes</a> sobre los conceptos y principios tecnicos que he ido estudiando.</p>
         </section>
-        <section class="section">
-            <ul class="proyects">
-                <li class="proyects__proyect">
-                    <div>
-                        <div class="proyects__proyect-title">unifeed Blog - pagina inicial</div>
-                        <a href="https://ciromirkin.github.io/unifeedBlogPage_Practice/" class="proyects__ptoyect-link">Visitar</a>
-                    </div>
-                    <div>
-                    </div>
-                </li>
-                <li class="proyects__proyect">
-                    <div>
-                        <div class="proyects__proyect-title">treasure Jhon Smith - pagina inicial</div>
-                        <a href="https://CiroMirkin.github.io/treasureJhonSmith_CSS" class="proyects__ptoyect-link">Visitar</a>
-                    </div>
-                    <div>
-                    </div>
-                </li>
-                <li class="proyects__proyect">
-                    <div>
-                        <div class="proyects__proyect-title">App para el Seguimiento de gastos</div>
-                        <a href="https://CiroMirkin.github.io/expenseTracker-JS" class="proyects__ptoyect-link">Visitar</a>
-                    </div>
-                    <div>
-                    </div>
-                </li>
-                <li class="proyects__proyect">
-                    <div>
-                        <div class="proyects__proyect-title">Aplicación minimalista de notas</div>
-                        <a href="https://ciromirkin.github.io/notesApp_JS/" class="proyects__ptoyect-link">Visitar</a>
-                    </div>
-                    <div>
-                    </div>
-                </li>
+        <div class="options">
+            <div class="img-container">
+                <img src="" class="">
+            </div>
+            <ul class="idioms">
+                <li>Español</li>
+                <li>Ingles</li>
             </ul>
-        </section>
+        </div>
     </main>
-
-    <footer class="tip">ciromirkin@gmail.com</footer>
+    <section class="contact">
+        <p>ciromirkin@gmail.com</p>
+        <div class="contact__contacts">
+            <a href="" class="btn">LinkedIn</a>
+            <a href="https://github.com/CiroMirkin" class="btn">Github</a>
+            <a href="https://www.codewars.com/users/ciro_mirkin" class="btn">Codewars</a>
+        </div>
+    </section>
+    <section class="skils-section">
+        <ul class="skils">
+            <li class="skils__skil">Javascript</li>
+            <li class="skils__skil">Bootstrap</li>
+            <li class="skils__skil">HTML</li>
+            <li class="skils__skil">CSS</li>
+        </ul>
+        <div><button>Proyectos</button></div>
+    </section>
+    <div class="proyects-modal"></div>
 </body>
 </html>
