@@ -4,7 +4,10 @@
     --font-color: #000;
     --line-color: #000;
     --primary-color: #fff;
-    --secondary-color: #2c2c2c;
+    --secondary-color: #f56645;
+}
+::selection {
+    background-color: var(--secondary-color);
 }
 @font-face {
     font-family: 'intro';
@@ -66,7 +69,7 @@ main .description .img-container {
 }
 .idioms__idiom:hover {
     border: 2px solid var(--line-color);
-    background: #f56645;
+    background: var(--secondary-color);
 }
 .idioms__idiom:not(:last-child) {
     border-inline-end: solid 2px var(--line-color);
@@ -98,7 +101,7 @@ main .description .img-container {
 }
 .btn:hover {
     padding: 5px 12px;
-    background: #f56645;
+    background: var(--secondary-color);
     border-width: 3px;
 }
 .skils-section {
@@ -139,5 +142,5 @@ main .description .img-container {
     transition: background .2s ease;
 }
 .skils-section div button:hover {
-    background: #f56645;
+    background: var(--secondary-color);
 }
