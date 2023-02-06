@@ -144,3 +144,18 @@ main .description .img-container {
 .skils-section div button:hover {
     background: var(--secondary-color);
 }
+.proyects-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: var(--primary-color);
+}
+.proyects-modal--hide {
+    z-index: -1;
+    display: none;
+}
+.proyects-modal--show {
+    z-index: 1;
+    display: block;
+}
