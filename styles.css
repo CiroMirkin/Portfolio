@@ -3,7 +3,7 @@
 .theme--light {
     --font-color: #000;
     --line-color: #000;
-    --primary-color: #ecebe9;
+    --primary-color: #fff;
     --secondary-color: #2c2c2c;
 }
 @font-face {
@@ -17,9 +17,10 @@ body {
 }
 .page-header {
     padding: 10px 0;
-    text-align: center;
+    font-size: 3.5ch;
+    font-weight: 500;
     font-family: 'intro';
-    font-size: 3ch;
+    text-align: center;
     border-bottom: 1px var(--line-color) solid;
 }
 main {
@@ -30,27 +31,44 @@ main {
 main .description p {
     margin: 0 0 10px;
 }
+main .description p a {
+    color: #000dbe;
+}
 main .options {
     display: grid;
     place-items: center;
 }
-main .options .img-container {
+main .description .img-container {
     display: none;
 }
 .img-container img {
     display: none;
 }
-.idioms {
+.options {
+    width: 100%;
     margin-top: 15px;
-    display: flex;
+    display: grid;
+    place-items: center;
     list-style: none;
 }
-.idioms li {
-    padding: 0 10px;
+.idioms {
+    display: flex;
+    justify-content: center;
+}
+.idioms__idiom {
+    padding: 2px 12px;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.5ch;
     font-weight: 500;
+    background: var(--primary-color);
+    border: 2px solid transparent;
+    transition: background 1s ease;
 }
-.idioms li:not(:last-child) {
+.idioms__idiom:hover {
+    border: 2px solid var(--line-color);
+    background: #f56645;
+}
+.idioms__idiom:not(:last-child) {
     border-inline-end: solid 2px var(--line-color);
 }
 .contact {
@@ -71,36 +89,42 @@ main .options .img-container {
 .contact__contacts .btn {
     display: block;
     margin: 0 5px;
-    padding: 7px 12px;
+    padding: 6px 13px;
     text-decoration: none;
-    /* color: #ee7828; */
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
+    border: 2px var(--line-color) solid;
+    color: var(--font-color);
+    background: var(--primary-color);
+    transition: background .2s ease;
+}
+.btn:hover {
+    padding: 5px 12px;
+    background: #f56645;
+    border-width: 3px;
 }
 .skils-section {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    place-items: center;
 }
 .skils {
     width: 100%;
+    height: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
     list-style: none;
 }
 .skils__skil {
-    padding: 10px;
-    font-size: 1.9ch;
-    font-weight: 500;
+    display: grid;
+    place-items: center;
+    font-size: 1.4ch;
+    font-weight: 700;
     text-align: center;
     border: .5px solid var(--line-color);
-}
-.skils__skil:nth-last-child(-n+2) {
-    border-bottom: 2px solid var(--line-color);
 }
 .skils-section div {
     width: 100%;
     height: 12vh;
+    display: grid;
+    place-items: center;
 }
 .skils-section div button {
     width: 100%;
@@ -108,7 +132,12 @@ main .options .img-container {
     font-size: 2.3ch;
     font-weight: 700;
     text-align: center;
+    color: var(--font-color);
     background: var(--primary-color);
     border: 2px solid var(--line-color);
-    border-top-width: 0;
+    border-top-width: 1px;
+    transition: background .2s ease;
+}
+.skils-section div button:hover {
+    background: #f56645;
 }
