@@ -49,21 +49,42 @@
             <li class="skils__skil">HTML</li>
             <li class="skils__skil">CSS</li>
         </ul>
-        <div><button>Proyectos</button></div>
+        <div><button id="openProyectsModal">Proyectos</button></div>
     </section>
-    <div class="proyects-modal proyects-modal--hide">
+    <div id="poyectsModal" class="proyects-modal proyects-modal--hide">
+        <header class="proyects-modal__header">
+            <p>Proyectos</p>
+            <button id="closeProyectsModal"></button>
+        </header>
         <ul class="preyects">
-            <li class="proyects__proyect">
-                <div>
-                    <p>Nombre</p>
-                    <p></p>
-                    <p>Description</p>
-                    <p></p>
-                    <img src="" alt="">
+            <li class="proyect">
+                <div class="proyect__texts">
+                    <p class="proyect__title">Gestor de gastos</p>
+                    <p class="proyect__description">Con este gestor de gastos los usuarios pueden registrar y controlar sus gastos de manera eficiente y organizada. Incluye un gráfico para visualizar las ganancias y los ingresos, que están categorizados y utiliza el localstorage para almacenar la información.</p>
+                </div>
+                <div class="proyect__img-container">
+                    <img src="https://i.postimg.cc/JzmDNz4N/fondo-nubes.jpg" alt="">
+                </div>
+                <div class="actions">
+                    <a href="" class="actions__action">Ver proyecto</a>
+                    <a href="https://github.com/CiroMirkin/expenseManager_JS" class="actions__action">Ver Github del proyecto</a>
                 </div>
             </li>
-            <li class="proyects__proyect"></li>
         </ul>
     </div>
+    <script>
+        const proyectsModal = document.getElementById('poyectsModal')
+        const closeProyectsModalBtn = document.getElementById('closeProyectsModal')
+        const openProyectsModalBtn = document.getElementById('openProyectsModal')
+        openProyectsModalBtn.addEventListener('click', () => {
+            proyectsModal.classList.remove('proyects-modal--hide')
+            proyectsModal.classList.add('proyects-modal--show')
+            window.scrollTo(pageXOffset, 0);
+        })
+        closeProyectsModalBtn.addEventListener('click', () => {
+            proyectsModal.classList.remove('proyects-modal--show')
+            proyectsModal.classList.add('proyects-modal--hide')
+        })
+    </script>
 </body>
 </html>

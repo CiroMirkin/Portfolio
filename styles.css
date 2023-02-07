@@ -17,6 +17,7 @@ body {
     background-color: var(--primary-color);
     color: var(--font-color);
     font-family: 'Open Sans', sans-serif;
+    position: relative;
 }
 .page-header {
     padding: 10px 0;
@@ -143,10 +144,14 @@ main .description .img-container {
     background: var(--secondary-color);
 }
 .proyects-modal {
-    position: fixed;
+    --modal-border:  2px solid var(--line-color);
+    position: absolute;
     left: 0;
     top: 0;
     width: 100%;
+    height: auto;
+    min-height: 100%;
+    overflow-y: auto;
     background: var(--primary-color);
 }
 .proyects-modal--hide {
@@ -156,4 +161,74 @@ main .description .img-container {
 .proyects-modal--show {
     z-index: 1;
     display: block;
+}
+.proyects-modal__header {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: var(--modal-border);
+}
+.proyects-modal__header p {
+    font-size: 1.5ch;
+    margin: 3px 10px;
+}
+.proyects-modal__header button {
+    width: 26px;
+    background: var(--secondary-color);
+    border: none;
+    border-left: var(--modal-border);
+}
+.proyect {
+    margin: 2px;
+    font-family: 'Open Sans', sans-serif;
+    border: var(--modal-border);
+}
+.proyect__texts {
+    padding: 5px;
+}
+.proyect__title {
+    font-size: 2.5ch;
+    font-weight: 700;
+}
+.proyect__description {
+    font-size: 2ch;
+    font-weight: 200;
+}
+.proyect__img-container {
+    display: block;
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+    border-top: var(--modal-border);
+}
+.proyect__img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: var(--modal-border);
+}
+.actions__action {
+    padding: 5px 10px;
+    font-size: 1.5ch;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    color: var(--font-color);
+}
+.actions__action:hover {
+    background: var(--secondary-color);
+}
+.actions__action:first-child {
+    border-right: var(--modal-border);
+    border-left: var(--modal-border);
+}
+.actions__action:last-child {
+    border-right: var(--modal-border);
 }
