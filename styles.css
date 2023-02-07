@@ -9,10 +9,6 @@
 ::selection {
     background-color: #999dbe;
 }
-@font-face {
-    font-family: 'intro';
-    src: url('./Intro-Trial-Bd.otf');
-}
 body {
     background-color: var(--primary-color);
     color: var(--font-color);
@@ -21,9 +17,9 @@ body {
 }
 .page-header {
     padding: 10px 0;
+    font-family: 'Open Sans', sans-serif;
     font-size: 3.5ch;
-    font-weight: 500;
-    font-family: 'intro';
+    font-weight: 800;
     text-align: center;
     border-bottom: 1px var(--line-color) solid;
 }
