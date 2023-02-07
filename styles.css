@@ -7,7 +7,7 @@
     --secondary-color: #f56645;
 }
 ::selection {
-    background-color: var(--secondary-color);
+    background-color: #999dbe;
 }
 @font-face {
     font-family: 'intro';
@@ -63,13 +63,11 @@ main .description .img-container {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5ch;
     font-weight: 500;
+    border: none;
     background: var(--primary-color);
-    border: 2px solid transparent;
-    transition: background 1s ease;
 }
 .idioms__idiom:hover {
-    border: 2px solid var(--line-color);
-    background: var(--secondary-color);
+    text-decoration: underline;
 }
 .idioms__idiom:not(:last-child) {
     border-inline-end: solid 2px var(--line-color);
