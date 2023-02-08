@@ -21,7 +21,7 @@ body {
     font-size: 3.5ch;
     font-weight: 800;
     text-align: center;
-    border-bottom: 1px var(--line-color) solid;
+    border-bottom: 2px var(--line-color) solid;
 }
 main {
     width: 100%;
@@ -74,7 +74,7 @@ main .description .img-container {
     padding: 15px 5px;
     display: grid;
     place-items: center;
-    border-top: 1px solid var(--line-color);
+    border-top: 2px solid var(--line-color);
     border-bottom: 1px solid var(--line-color);
 }
 .contact p {
