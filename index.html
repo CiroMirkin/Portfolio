@@ -34,7 +34,7 @@
         </div>
     </main>
     <section class="contact">
-        <p>ciromirkin@gmail.com</p>
+        <p>ciromirkin@gmail.com <button id="copyGmailBTN" class="copy-btn"><span class="icon-copy"></span></button></p>
         <div class="contact__contacts">
             <a href="" class="btn">LinkedIn</a>
             <a href="https://github.com/CiroMirkin" class="btn">Github</a>
@@ -78,6 +78,9 @@
         </ul>
     </div>
     <script>
+        const copyGmailBtn = document.getElementById('copyGmailBTN')
+        copyGmailBtn.addEventListener('click', () => navigator.clipboard.writeText("ciromirkin@gmail.com"))
+
         const proyectsModal = document.getElementById('poyectsModal')
         const closeProyectsModalBtn = document.getElementById('closeProyectsModal')
         const openProyectsModalBtn = document.getElementById('openProyectsModal')
