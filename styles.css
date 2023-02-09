@@ -114,11 +114,6 @@ main .description .img-container {
 .contact__contacts .btn:hover {
     box-shadow: inset 0 -100px 0 0 var(--secondary-color);
 }
-.btn:hover {
-    padding: 5px 12px;
-    background: var(--secondary-color);
-    border-width: 3px;
-}
 .skils-section {
     display: grid;
     place-items: center;
