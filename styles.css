@@ -123,7 +123,10 @@ main .description .img-container {
     height: 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+	aling-items: center;
     list-style: none;
+	border-top: 1.5px solid var(--line-color);
+	border-bottom: 1.5px solid var(--line-color);
 }
 .list__item {
     display: grid;
@@ -131,7 +134,8 @@ main .description .img-container {
     font-size: 1.4ch;
     font-weight: 700;
     text-align: center;
-    border: .5px solid var(--line-color);
+    border-left: .5px solid var(--line-color);
+    border-right: .5px solid var(--line-color);
 }
 .skils-section div {
     width: 100%;
@@ -212,7 +216,7 @@ main .description .img-container {
     filter: opacity(100%);
 }
 .proyect {
-    margin: 2px;
+    margin: 2px 2px 15px;
     font-family: 'Open Sans', sans-serif;
     border: var(--modal-border);
 }
@@ -220,7 +224,7 @@ main .description .img-container {
     margin-top: calc(25px + 15px);
 }
 .proyect__texts {
-    padding: 5px;
+    padding: 7px 10px;
 }
 .proyect__title {
     font-size: 2.5ch;
