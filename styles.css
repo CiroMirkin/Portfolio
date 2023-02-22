@@ -70,7 +70,7 @@ main .description .img-container {
 .idioms__idiom:not(:last-child) {
     border-inline-end: solid 2px var(--line-color);
 }
-.contact {
+.contact-section {
     width: 100%;
     padding: 15px 5px;
     display: grid;
@@ -78,32 +78,17 @@ main .description .img-container {
     border-top: 2px solid var(--line-color);
     border-bottom: 1px solid var(--line-color);
 }
-.contact p {
+.contact-section p {
     font-size: 2.3ch;
     text-align: center;
 }
-.copy-btn {
-    width: 15px;
-    height: 15px;
-    border: none;
-    background: transparent;
-}
-.icon-copy {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background-image: url("https://i.postimg.cc/jd6Czc5X/copy.png");
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.contact__contacts {
-    margin: 15px 0 0;
+.social {
+    margin: 10px 0 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.contact__contacts .btn {
+.btn {
     position: relative;
     display: block;
     margin: 5px;
@@ -114,7 +99,7 @@ main .description .img-container {
     background: var(--primary-color);
     transition: box-shadow ease-out .5s;
 }
-.contact__contacts .btn:hover {
+.btn:hover {
     box-shadow: inset 0 -100px 0 0 var(--secondary-color);
 }
 .skils-section {
