@@ -84,8 +84,9 @@ main .description .img-container {
     border-top: 2px solid var(--line-color);
     border-bottom: 1px solid var(--line-color);
 }
-.contact-section p {
-    font-size: 2.3ch;
+.contact-section h3 {
+    font-size: 2.4ch;
+    font-weight: 500;
     text-align: center;
 }
 .social {
