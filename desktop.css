@@ -32,6 +32,10 @@ main {
     margin: 0;
     border-bottom-width: 3px;
 }
+.list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
 .proyects-modal {
     --modal-border: 3px solid var(--line-color);
 }
