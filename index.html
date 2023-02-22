@@ -51,49 +51,51 @@
             <li class="list__item">HTML</li>
             <li class="list__item">CSS</li>
         </ul>
-        <div><button id="openProyectsModal">Proyectos</button></div>
+        <div><button id="openProjectsModal">Proyectos</button></div>
     </section>
-    <div id="poyectsModal" class="proyects-modal proyects-modal--hide">
-        <header class="proyects-modal__header">
+    <div id="projectsModal" class="modal modal--hide">
+        <header class="modal__header">
             <p>Proyectos</p>
             <div class="line"></div>
-            <button id="closeProyectsModal"></button>
+            <button id="closeProjectsModal"></button>
         </header>
-        <ul class="projects">
-			<li class="proyect">
-                <div class="proyect__texts">
-                    <p class="proyect__title">Jhon Smith portafolio</p>
-                    <p class="proyect__description">Este sitio web es un portafolio construido únicamente con CSS y HTML. Se basa en un diseño inspirado en Pinterest. La página carga rápidamente y ofrece una presentación profesional y efectiva de la experiencia y habilidades del propietario.</p>
-                </div>
-                <ul class="skils">
-                    <li class="skils__skil">HTML</li>
-                    <li class="skils__skil">CSS</li>
-                </ul>
-                <div class="proyect__img-container">
-                    <img src="https://i.postimg.cc/T3DR8KBY/jhon-smith-portfolio-view.jpg" alt="Captura de pantalla del proyecto.">
-                </div>
-                <div class="actions">
-                    <a href="https://ciromirkin.github.io/treasureJhonSmith_CSS/" class="actions__action">Ver proyecto</a>
-                    <a href="https://github.com/CiroMirkin/treasureJhonSmith_CSS" class="actions__action">Ver Github del proyecto</a>
-                </div>
-            </li>
-        </ul>
+        <div class="modal__content">
+            <ul class="projects">
+                <li class="project">
+                    <div class="project__texts">
+                        <p class="project__title">Jhon Smith portafolio</p>
+                        <p class="project__description">Este sitio web es un portafolio construido únicamente con CSS y HTML. Se basa en un diseño inspirado en Pinterest. La página carga rápidamente y ofrece una presentación profesional y efectiva de la experiencia y habilidades del propietario.</p>
+                    </div>
+                    <ul class="skils">
+                        <li class="skils__skil">HTML</li>
+                        <li class="skils__skil">CSS</li>
+                    </ul>
+                    <div class="project__img-container">
+                        <img src="https://i.postimg.cc/T3DR8KBY/jhon-smith-portfolio-view.jpg" alt="Captura de pantalla del proyecto.">
+                    </div>
+                    <div class="actions">
+                        <a href="https://ciromirkin.github.io/treasureJhonSmith_CSS/" class="actions__action">Ver projecto</a>
+                        <a href="https://github.com/CiroMirkin/treasureJhonSmith_CSS" class="actions__action">Ver Github del projecto</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
     <script>
         const copyGmailBtn = document.getElementById('copyGmailBTN')
         copyGmailBtn.addEventListener('click', () => navigator.clipboard.writeText("ciromirkin@gmail.com"))
 
-        const proyectsModal = document.getElementById('poyectsModal')
-        const closeProyectsModalBtn = document.getElementById('closeProyectsModal')
-        const openProyectsModalBtn = document.getElementById('openProyectsModal')
-        openProyectsModalBtn.addEventListener('click', () => {
-            proyectsModal.classList.remove('proyects-modal--hide')
-            proyectsModal.classList.add('proyects-modal--show')
+        const projectsModal = document.getElementById('projectsModal')
+        const closeProjectsModalBtn = document.getElementById('closeProjectsModal')
+        const openProjectsModalBtn = document.getElementById('openProjectsModal')
+        openProjectsModalBtn.addEventListener('click', () => {
+            projectsModal.classList.remove('modal--hide')
+            projectsModal.classList.add('modal--show')
             window.scrollTo(pageXOffset, 0);
         })
-        closeProyectsModalBtn.addEventListener('click', () => {
-            proyectsModal.classList.remove('proyects-modal--show')
-            proyectsModal.classList.add('proyects-modal--hide')
+        closeProjectsModalBtn.addEventListener('click', () => {
+            projectsModal.classList.remove('modal--show')
+            projectsModal.classList.add('modal--hide')
         })
     </script>
 </body>
