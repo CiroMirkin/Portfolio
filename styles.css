@@ -100,11 +100,13 @@ main .description .img-container {
 .contact__contacts {
     margin: 15px 0 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .contact__contacts .btn {
     position: relative;
     display: block;
-    margin: 0 5px;
+    margin: 5px;
     padding: 6px 13px;
     text-decoration: none;
     border: 2px var(--line-color) solid;
