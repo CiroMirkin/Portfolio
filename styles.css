@@ -9,6 +9,12 @@
 ::selection {
     background-color: #999dbe;
 }
+b {
+    font-weight: 500;
+}
+strong {
+    font-weight: 700;
+}
 body {
     background-color: var(--primary-color);
     color: var(--font-color);
