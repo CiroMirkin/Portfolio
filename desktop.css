@@ -6,7 +6,8 @@ main {
     display: grid;
     grid-template-columns: 1.1fr 2fr;
 }
-.square {
+main .square {
+	display: block;
     background-color: var(--secondary-color);
     border-right: 3px solid var(--line-color);
 }

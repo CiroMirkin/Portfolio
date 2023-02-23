@@ -13,7 +13,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" media="(min-width: 769px)" href="./desktop.css">
-    <link rel="stylesheet" media="(min-width: 110px)" href="./large-desktop.css">
+    <link rel="stylesheet" media="(min-width: 1010px)" href="./large-desktop.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,67 +21,69 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="theme--light">
-    <header class="page-header">Ciro Mirkin</header>
-    <main>
-        <div class="animate__animated animate__fadeInLeft animate__fast square"></div>
-        <section class="description">
-            <P><b>Soy un programador Frontend con un enfoque en Javascript.</b></P>
-            <p>He estado estudiando y practicando este lenguaje durante los últimos tres años, lo que ha hecho que se conviertan en mi fortaleza.</p>
-            <p>Durante este tiempo, he estado documentando mis estudios y aprendizajes sobre los conceptos y principios técnicos en forma de <a href="https://cm-apuntes.netlify.app/">apuntes</a>.</p>
-            <div class="options">
-                <div class="idioms">
-                <button class="idioms__idiom">Español</button>
-                <button class="idioms__idiom">Ingles</button>
-                </div>
-            </div>
-        </section>
-    </main>
-    <section class="contact-section">
-        <h3>Contacto</h3>
-        <div class="social">
-            <a href="mailto:ciromirkin@gmail.com" class="btn">Mail</a>
-            <a href="" class="btn">LinkedIn</a>
-            <a href="https://github.com/CiroMirkin" class="btn">Github</a>
-            <a href="https://www.codewars.com/users/ciro_mirkin" class="btn">Codewars</a>
-        </div>
-    </section>
-    <section class="skils-section">
-        <ul class="list">
-            <li class="list__item">Javascript</li>
-            <li class="list__item">GIT</li>
-            <li class="list__item">HTML</li>
-            <li class="list__item">CSS</li>
-        </ul>
-        <div><button id="openProjectsModal">Proyectos</button></div>
-    </section>
-    <div id="projectsModal" class="modal modal--hide">
-        <header class="modal__header">
-            <p>Proyectos</p>
-            <div class="line"></div>
-            <button id="closeProjectsModal"></button>
-        </header>
-        <div class="modal__content">
-            <ul class="projects">
-                <li class="project">
-                    <div class="project__texts">
-                        <p class="project__title">Jhon Smith portafolio</p>
-                        <p class="project__description">Este sitio web es un portafolio construido únicamente con CSS y HTML. Se basa en un diseño inspirado en Pinterest. La página carga rápidamente y ofrece una presentación profesional y efectiva de la experiencia y habilidades del propietario.</p>
-                    </div>
-                    <ul class="skils">
-                        <li class="skils__skil">HTML</li>
-                        <li class="skils__skil">CSS</li>
-                    </ul>
-                    <div class="project__img-container">
-                        <img src="https://i.postimg.cc/T3DR8KBY/jhon-smith-portfolio-view.jpg" alt="Captura de pantalla del proyecto.">
-                    </div>
-                    <div class="actions">
-                        <a href="https://ciromirkin.github.io/treasureJhonSmith_CSS/" class="actions__action">Ver projecto</a>
-                        <a href="https://github.com/CiroMirkin/treasureJhonSmith_CSS" class="actions__action">Ver Github del projecto</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <div class="content">
+		<header class="page-header">Ciro Mirkin</header>
+		<main>
+			<div class="animate__animated animate__fadeInLeft animate__fast square"></div>
+			<section class="description">
+				<P><b>Soy un programador Frontend con un enfoque en Javascript.</b></P>
+				<p>He estado estudiando y practicando este lenguaje durante los últimos tres años, lo que ha hecho que se conviertan en mi fortaleza.</p>
+				<p>Durante este tiempo, he estado documentando mis estudios y aprendizajes sobre los conceptos y principios técnicos en forma de <a href="https://cm-apuntes.netlify.app/">apuntes</a>.</p>
+				<div class="options">
+					<div class="idioms">
+					<button class="idioms__idiom">Español</button>
+					<button class="idioms__idiom">Ingles</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<section class="contact-section">
+			<h3>Contacto</h3>
+			<div class="social">
+				<a href="mailto:ciromirkin@gmail.com" class="btn">Mail</a>
+				<a href="" class="btn">LinkedIn</a>
+				<a href="https://github.com/CiroMirkin" class="btn">Github</a>
+				<a href="https://www.codewars.com/users/ciro_mirkin" class="btn">Codewars</a>
+			</div>
+		</section>
+		<section class="skils-section">
+			<ul class="list">
+				<li class="list__item">Javascript</li>
+				<li class="list__item">GIT</li>
+				<li class="list__item">HTML</li>
+				<li class="list__item">CSS</li>
+			</ul>
+			<div><button id="openProjectsModal">Proyectos</button></div>
+		</section>
+		<div id="projectsModal" class="modal modal--hide">
+			<header class="modal__header">
+				<p>Proyectos</p>
+				<div class="line"></div>
+				<button id="closeProjectsModal"></button>
+			</header>
+			<div class="modal__content">
+				<ul class="projects">
+					<li class="project">
+						<div class="project__texts">
+							<p class="project__title">Jhon Smith portafolio</p>
+							<p class="project__description">Este sitio web es un portafolio construido únicamente con CSS y HTML. Se basa en un diseño inspirado en Pinterest. La página carga rápidamente y ofrece una presentación profesional y efectiva de la experiencia y habilidades del propietario.</p>
+						</div>
+						<ul class="skils">
+							<li class="skils__skil">HTML</li>
+							<li class="skils__skil">CSS</li>
+						</ul>
+						<div class="project__img-container">
+							<img src="https://i.postimg.cc/T3DR8KBY/jhon-smith-portfolio-view.jpg" alt="Captura de pantalla del proyecto.">
+						</div>
+						<div class="actions">
+							<a href="https://ciromirkin.github.io/treasureJhonSmith_CSS/" class="actions__action">Ver projecto</a>
+							<a href="https://github.com/CiroMirkin/treasureJhonSmith_CSS" class="actions__action">Ver Github del projecto</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
     <script>
         const projectsModal = document.getElementById('projectsModal')
         const closeProjectsModalBtn = document.getElementById('closeProjectsModal')
