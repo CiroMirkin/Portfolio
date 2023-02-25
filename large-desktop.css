@@ -1,0 +1,18 @@
+body {
+	background-color: var(--secondary-color);
+}
+.content {
+	margin: 0 24vw;
+	background: var(--primary-color);
+    border-left: 3px solid var(--line-color);
+    border-right: 3px solid var(--line-color);
+}
+main {
+	grid-template-columns: 1fr;
+}
+main .square {
+	display: none;
+}
+.modal__content {
+	padding: 2vw 15vw 0;
+}
