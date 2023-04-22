@@ -26,12 +26,10 @@ main .square {
     grid-template-columns: 1fr 3fr;
     align-items: stretch;
 }
-.skils-section div{
+.skils-section .next-section-title{
     height: 100%;
-}
-.skils-section div button {
     margin: 0;
-    border-bottom-width: 3px;
+    border-top: 2px solid var(--line-color);
 }
 .list {
     grid-template-columns: 1fr 1fr;
