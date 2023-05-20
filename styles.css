@@ -144,10 +144,16 @@ main .options {
     border-top: none;
 }
 .projects {
+    width: 100%;
     --modal-border:  2px solid var(--line-color);
 	list-style: none; 
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .project {
+    display: block;
+    width: 90%;
     margin: 2px 7px 15px;
     font-family: 'Open Sans', sans-serif;
     border: var(--modal-border);
@@ -191,16 +197,18 @@ main .options {
     border-right: var(--modal-border);
 }
 .project__img-container {
-    display: block;
+    display: grid;
+    place-items: center;
     width: 100%;
+    height: 330px;
     max-height: 350px;
     padding: 5px;
     border-top: var(--modal-border);
 }
 .project__img-container img {
-    max-inline-size: 100%;
-    block-size: auto;
-    object-fit: cover;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
 	filter: grayscale(100%) ;
 	transition: filter .4s ease;
 }
