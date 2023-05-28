@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#ffffff"> 
+    <meta name="theme-color" content="#EBEBE9"> 
     <meta property="og:title" content="Ciro Mirkin">
-    <meta property="og:description" content="Frontend portfolio">
+    <meta property="og:description" content="Frontend dev portfolio">
     <!-- <meta property="og:image" content="http://"> -->
     
     <title>C.Mirkin - Portafolio</title>
@@ -14,48 +14,87 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" media="(min-width: 769px)" href="./desktop.css">
     <link rel="stylesheet" media="(min-width: 1010px)" href="./large-desktop.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="theme--light">
-    <div class="content">
-		<header class="page-header">Ciro Mirkin</header>
-		<main>
-			<div class="animate__animated animate__fadeInLeft animate__fast square"></div>
-			<section class="description">
-				<P><b>Soy un programador Frontend con un enfoque en Javascript.</b></P>
-				<p>He estado estudiando y practicando este lenguaje durante los últimos tres años, lo que ha hecho que se conviertan en mi fortaleza.</p>
-				<p>Durante este tiempo, he estado documentando mis estudios y aprendizajes sobre los conceptos y principios técnicos en forma de <a href="https://cm-apuntes.netlify.app/">apuntes</a>.</p>
-				<div class="options">
-					<div class="idioms">
-					<button class="idioms__idiom">Español</button>
-					<button class="idioms__idiom">Ingles</button>
+    
+	<header class="page-header">
+		<nav>
+			<div class="buttons">
+				<button>Quien soy</button>
+				<button>Redes</button>
+				<button>Habilidades</button>
+				<button>Proyectos</button>
+			</div>
+		</nav>
+		<div class="lenguaje">
+			<div class="buttons">
+				<button>Español</button>
+				<button>English</button>
+			</div>
+		</div>
+	</header>
+	<section class="description">
+		<div class="color"></div>
+		<div class="text">
+			<h1>Ciro</h1>
+			<h2>Mirkin</h2>
+		</div>
+	</section>
+	<main>
+		<section class="about-me">
+			<main>
+				<header>
+					<div class="color"></div>
+					<P>Soy un desarrollador web Front-End, con 3 años de experiencia diseñando y programando sitios webs.</P>
+				</header>
+				<div class="text">
+					<p>Soy un desarrollador web Front-End freelance con 4 años de experiencia en programación y 3 años específicamente como desarrollador web.</p>
+					<p>Se tanto de programación como de diseño web, y he trabajado en múltiples proyectos. Además, soy capaz de crear prompts efectivos para IAs, lo que me permite sumarlas a mi proceso de desarrollo.</p>
+					<p>Como desarrollador freelance, colaboro estrechamente con mis clientes para transformar sus expectativas en sitios web a la medida, comprometiéndome con cada proyecto para poder brindar un servicio de calidad.</p>
+				</div>
+			</main>
+		</section>
+		<section class="links">
+			<div class="social-media">
+				<div>
+					<div class="row">
+						<a href="mailto:ciromirkin@gmail.com" class="btn">Gmail</a>
+						<a href="" class="btn">LinkedIn</a>
+						<a href="https://github.com/CiroMirkin" target="_blank" class="btn">Github</a>
+					</div>
+					<div class="row">
+						<a href="https://medium.com/@ciromirkin/" target="_blank" class="btn">Blog</a>
+						<a href="https://www.codewars.com/users/ciro_mirkin" target="_blank" class="btn">Codewars</a>
 					</div>
 				</div>
-			</section>
-		</main>
-		<section class="contact-section">
-			<h3>Contacto</h3>
-			<div class="social">
-				<a href="mailto:ciromirkin@gmail.com" class="btn">Mail</a>
-				<a href="" class="btn">LinkedIn</a>
-				<a href="https://github.com/CiroMirkin" class="btn">Github</a>
-				<a href="https://www.codewars.com/users/ciro_mirkin" class="btn">Codewars</a>
 			</div>
+			<a href="" class="see-cv" target="_blank">Ver CV</a>
 		</section>
-		<section class="skils-section">
-			<ul class="list">
-				<li class="list__item">Javascript</li>
-				<li class="list__item">GIT</li>
-				<li class="list__item">HTML</li>
-				<li class="list__item">CSS</li>
+		<div class="color-bar"></div>
+		<section class="tools">
+			<h2>Tegnologias que uso</h2>
+			<ul class="tool-list">
+				<li class="tool-list__item">JavaScript</li>
+				<li class="tool-list__item">HTML & CSS</li>
+				<li class="tool-list__item">Bootstrap</li>
+				<li class="tool-list__item">Python</li>
 			</ul>
-			<div class="next-section-title">Proyectos</div>
+			<div class="color-bar color-bar--skini"></div>
+			<h2>Herramientas que uso</h2>
+			<ul class="tool-list">
+				<li class="tool-list__item">VS Code</li>
+				<li class="tool-list__item">Figma</li>
+				<li class="tool-list__item">Chat GPT-4</li>
+				<li class="tool-list__item">GIT & GitHub</li>
+			</ul>
 		</section>
-		<div>
+		<div class="color-bar"></div>
+		<section class="projects-section">
+			<h2>Proyectos</h2>
 			<ul class="projects">
 				<li class="project">
 					<div class="project__texts">
@@ -72,8 +111,8 @@
 						<img src="https://i.postimg.cc/7Z0tfrFT/expense-manager-screeshot.jpg" alt="Captura de pantalla del proyecto.">
 					</div>
 					<div class="actions">
-						<a href="https://ciromirkin.github.io/expenseManager_JS/" class="actions__action">Ver projecto</a>
-						<a href="https://github.com/CiroMirkin/expenseManager_JS" class="actions__action">Ver en Github</a>
+						<a href="https://ciromirkin.github.io/expenseManager_JS/" target="_blank" class="actions__action">Ver projecto</a>
+						<a href="https://github.com/CiroMirkin/expenseManager_JS" target="_blank" class="actions__action">Ver en Github</a>
 					</div>
 				</li>
 				<li class="project">
@@ -90,12 +129,12 @@
 						<img src="https://i.postimg.cc/13nKT1D0/shopping-list-project.png" alt="Captura de pantalla del proyecto.">
 					</div>
 					<div class="actions">
-						<a href="https://ciromirkin.github.io/easyShoppingList_JS/" class="actions__action">Ver projecto</a>
-						<a href="https://github.com/CiroMirkin/easyShoppingList_JS" class="actions__action">Ver en Github</a>
+						<a href="https://ciromirkin.github.io/easyShoppingList_JS/" target="_blank" class="actions__action">Ver projecto</a>
+						<a href="https://github.com/CiroMirkin/easyShoppingList_JS" target="_blank" class="actions__action">Ver en Github</a>
 					</div>
 				</li>
 			</ul>
-		</div>
-	</div>
+		</section>
+	</main>
 </body>
 </html>
