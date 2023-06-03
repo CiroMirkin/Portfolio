@@ -23,7 +23,6 @@
 .proyects-modal__header .line {
     border-width: 2px;
 }
-.projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.project {
+    width: 40rem;
 }
