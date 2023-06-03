@@ -147,7 +147,7 @@ main header {
     display: flex;
 }
 main header .color {
-    width: 5rem;
+    width: 5vw;
     background-color: var(--secondary-color);
     border-right: var(--border);
 }
@@ -190,7 +190,7 @@ main .text p {
     width: 100%;
     display: grid;
     place-items: center;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 .social-media div {
     width: 85vw;
@@ -232,7 +232,7 @@ main .text p {
 }
 .tools {
     width: 100%;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 .tools h2 {
     width: 100%;
