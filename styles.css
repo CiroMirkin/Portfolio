@@ -274,11 +274,15 @@ main .text p {
 .projects {
     width: 100%;
     padding: 10px 0;
-    --modal-border:  var(--border);
+    --modal-border: var(--border);
 	list-style: none; 
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+.projects:first-child {
+    display: none;
+    width: 0;
 }
 .project {
     display: block;
@@ -337,7 +341,7 @@ main .text p {
 }
 .project__img-container img {
     object-fit: contain;
-    width: 100%;
+    width: auto;
     height: 100%;
 	filter: grayscale(100%) ;
 	transition: filter .4s ease;
