@@ -42,11 +42,13 @@ body {
     border-inline-end: var(--border);
     background-color: var(--primary-color);
 }
-.page-header nav .buttons button {
+.page-header nav .buttons a {
     padding: 4px 4px;
     display: grid;
     place-items: center;
     text-align: center;
+    text-decoration: none;
+    color: var(--font-color);
     font-family: 'IBM Plex Mono', monospace;
     font-size: 1.5ch;
     font-weight: 600;
@@ -54,10 +56,10 @@ body {
     border: none;
     transition: ease background 5ms;
 } 
-.page-header nav .buttons button:hover {
+.page-header nav .buttons a:hover {
     background: var(--secondary-color);
 }
-.page-header nav .buttons button:not(:last-child) {
+.page-header nav .buttons a:not(:last-child) {
     border-inline-end: var(--border);
 }
 .lenguaje {
