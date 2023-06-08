@@ -132,22 +132,37 @@ body {
 }
 .about-me {
     width: 100%;
-    padding: 40px 0;
-    display: grid;
-    place-items: center;
+    height: 135vh;
+    display: flex;
     font-size: 2ch;
     font-family: 'IBM Plex Mono', monospace;
     background: var(--primary-color);
 }
+.about-me__color {
+    display: block;
+    width: 20vw;
+    height: 100%;
+    border-right: var(--border);
+    background-color: var(--secondary-color);
+}
 .about-me main {
     width: 80vw;
-    border: var(--border);
+    height: 100%;
+    transform: translateX(-25px);
+    display: grid;
+    place-items: center;
 }
+.about-me main .content {
+    border: var(--border);
+    width: 100%;
+    margin: 10px 0;
+    background-color: var(--primary-color);
+} 
 main header {
     display: flex;
 }
 main header .color {
-    width: 5vw;
+    width: 50px;
     background-color: var(--secondary-color);
     border-right: var(--border);
 }
