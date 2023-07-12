@@ -1,5 +1,5 @@
 .description .color { 
-    width: 30vw;
+    width: 20vw;
 }
 .description .text {
     width: 70vw;
@@ -9,14 +9,13 @@
     line-height: 120px;
 }
 .about-me {
-    height: 85vh;
+    height: 70vh;
 }
 .about-me__color {
-    width: 30vw;
+    width: 20vw;
 }
 .about-me main {
     width: 65vw;
-    transform: translateX(-40px);
 }
 main header .color { 
     width: 80px;    
