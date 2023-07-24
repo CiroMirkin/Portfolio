@@ -36,7 +36,9 @@ body {
 .description .text {
     width: auto;
     height: auto;
-    padding: 6vw 12px;
+    padding-inline: 12px;
+    padding-block-start: 7vw;
+    padding-block-end: 6vw;
 
     display: flex;
     align-items: center;
@@ -220,6 +222,9 @@ body {
 .social-media .link {
     padding: 8px 12px;
     border-inline-start: var(--border);
+}
+.social-media .link--cv {
+    margin-block: 14px;
 }
 .social-media link:not(:last-child){
     border-block-end: var(--border);
