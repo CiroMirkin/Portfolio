@@ -70,6 +70,7 @@ body {
 /*  */
 
 .projects-section {
+    width: 100%;
     border-block: var(--border);
     background-color: var(--primary-color);
 }
@@ -84,19 +85,21 @@ body {
     padding: 10px 0;
     --modal-border: var(--border);
 	list-style: none; 
+
     display: flex;
     justify-content: space-evenly;
-    align-items: baseline;
+    align-items: center;
     flex-wrap: wrap;
+
 }
 .project {
-    display: block;
+    display: inline-block;
     width: 90%;
     height: auto;
     margin: 2px 7px 15px;
     font-family: 'IBM Plex Mono', monospace;
     border: var(--modal-border);
-    background: #fff;
+    background: #F7F9FB;
 }
 .project__texts {
     padding: 10px 10px 10px 15px;
