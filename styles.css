@@ -34,10 +34,15 @@ body {
     justify-content: left;
 }
 .description .text {
-    display: block;
     width: auto;
-    height: 160px;
-    padding: 18px 12px;
+    height: auto;
+    padding: 6vw 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 500;
     cursor: default;
@@ -46,14 +51,18 @@ body {
     background-color: var(--primary-color);
 }
 .description .text h1 {
+    display: inline-block;
     font-size: 12ch;
     line-height: 70px;
+    color: var(--font-color);
 }
 .description .text h2 {
-    margin-block-start: 4px;
-    padding-inline-start: 4px;
+    display: inline-block;
+    margin-block-start: 16px;
+    padding-inline-start: 6px;
     font-size: 5ch;
-    line-height: 70px;
+    line-height: 60px;
+    color: var(--font-color);
 }
 
 /*  */
