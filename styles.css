@@ -223,7 +223,7 @@ body {
     flex-direction: column;
 }
 .social-media .link {
-    padding: 8px 12px;
+    padding: 10px 14px;
     border-inline-start: var(--border);
 }
 .social-media .link--cv {
