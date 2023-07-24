@@ -47,12 +47,13 @@ body {
 }
 .description .text h1 {
     font-size: 12ch;
-    line-height: 80px;
+    line-height: 70px;
 }
 .description .text h2 {
+    margin-block-start: 4px;
+    padding-inline-start: 4px;
     font-size: 5ch;
-    line-height: 76px;
-    margin-inline-start: 14px;
+    line-height: 70px;
 }
 
 /*  */
@@ -76,7 +77,6 @@ body {
     justify-content: space-evenly;
     align-items: baseline;
     flex-wrap: wrap;
-    background: #fff;
 }
 .project {
     display: block;
