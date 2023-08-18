@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#EBEBE9"> 
     <meta property="og:title" content="Ciro Mirkin">
-    <meta property="og:description" content="Frontend dev portfolio">
+    <meta property="og:description" content="Portafolio de un Front-end Dev.">
     <!-- <meta property="og:image" content="http://"> -->
     
     <title>C.Mirkin - Portafolio</title>
     <!-- Styles -->
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" media="(min-width: 769px)" href="./desktop.css">
 	<!-- Animations -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Google fonts -->
@@ -23,26 +22,27 @@
 <body class="theme--light">
 	<header class="header"></header>
 	<section class="description">
-		<div class="text"  data-aos="fade-left">
+		<div class="text"  data-aos="fade-up">
 			<h1>Ciro</h1>
 			<h2>Mirkin</h2>
 		</div>
 	</section>
 	<main>
 		<section class="projects-section">
+			<div class="projects-section__icon-container"></div>
 			<h2>Portafolio.</h2>
 			<ul class="projects">
 				<li class="project" data-aos="fade-up">
 					<div class="project__texts">
 						<p class="project__title">Kan-Ban</p>
-						<p class="project__description">Aplicación web que permite utilizar un tablero Kanban virtual con tres columnas basicas.</p>
+						<p class="project__description">Aplicación web que permite usar un tablero para gestionar tareas.</p>
 					</div>
 					<div class="actions">
 						<a href="https://cm-kanban.netlify.app/" target="_blank" class="actions__action">Ver projecto</a>
 						<a href="https://github.com/CiroMirkin/Kan-Ban" target="_blank" class="actions__action">Ver en Github</a>
 					</div>
 					<div class="project__img-container">
-						<img src="https://i.postimg.cc/VLBwWQmR/Kan-Ban-Screenshot.png" alt="Captura de pantalla del proyecto.">
+						<img src="https://i.postimg.cc/VLBwWQmR/Kan-Ban-Screenshot.png" alt="Captura de pantalla del proyecto Kan-Ban.">
 					</div>
 					<ul class="skils">
 						<li class="skils__skil">Type<span>Script</span></li>
@@ -55,30 +55,54 @@
 		<section class="about-me">
 			<main data-aos="fade-up">
 				<header>
-					<P>Desarrollador front-end con experiencia desarrollando sitios y aplicaciones web durante 3 años.</P>
+					<P>Desarrollador Front-end con experiencia desarrollando sitios y aplicaciones web durante 3 años.</P>
 				</header>
 				<div class="text">
-					<p>A lo largo del tiempo he trabajado en múltiples proyectos personales, siendo las aplicaciones web mi principal enfoque. </p>
-					<p style="margin-block-start:5px;">En este tiempo fui sumando múltiples conceptos y herramientas a mi proceso de desarrollo, desde principios como SOLID hasta inteligencia artificial, pasando por conceptos de arquitectura como las métricas de calidad de componentes y herramientas como Figma.</p>
+					<p>Trabaje en múltiples proyectos personales, siendo las aplicaciones web mi principal enfoque. </p>
+					<p style="margin-block-start:10px;">Aprendi tanto conceptos y a usar herramientas que sume a mi proceso de desarrollo, desde principios como SOLID y conceptos de arquitectura como métricas de calidad de componentes hasta inteligencia artificial.</p>
 				</div>
 			</main>
 		</section>
-		<section class="social-media" data-aos="fade-up">
+		<section class="tech-list-section" data-aos="fade-up">
+			<p class="tech-list-section__title">Tecnologias.</p>
+			<ul class="tech-list">
+				<li class="tech-list__tech">TypeScript</li>
+				<li class="tech-list__tech">JavaScript</li>
+				<li class="tech-list__tech">HTML</li>
+				<li class="tech-list__tech">CSS</li>
+				<li class="tech-list__tech">Bootstrap</li>
+				<li class="tech-list__tech">Python</li>
+			</ul>
+		</section>
+		<section class="tool-list-section" data-aos="fade-up">
+			<div class="tool-list-section__container">
+				<p class="tool-list-section__title">Herramientas.</p>
+				<ul class="tool-list">
+					<li class="tool-list__tool">VS Code</li>
+					<li class="tool-list__tool">GIT</li>
+					<li class="tool-list__tool">GitHub</li>
+					<li class="tool-list__tool">Figma</li>
+					<li class="tool-list__tool">Chrome DevTools</li>
+					<li class="tool-list__tool">Consola de comandos</li>
+				</ul>
+			</div>
+		</section>
+		<footer class="social-media" data-aos="fade-up">
 			<div class="social-media__color"></div>
 			<main>
 				<header>
-					<a href="mailto:ciromirkin@gmail.com" class="link">Gmail</a>
-					<a href="https://www.linkedin.com/in/ciro-mirkin-775a85278" target="_blank" class="link">LinkedIn</a>
-					<a href="https://github.com/CiroMirkin" target="_blank" class="link">Github</a>
+					<a href="mailto:ciromirkin@gmail.com" class="link">Gmail.</a>
+					<a href="https://www.linkedin.com/in/ciro-mirkin-775a85278" target="_blank" class="link">LinkedIn.</a>
+					<a href="https://github.com/CiroMirkin" target="_blank" class="link">GitHub.</a>
 				</header>
-				<a href="#" class="link link--cv" target="_blank">Ver CV</a>
+				<a href="#" class="link link--cv" target="_blank">Ver CV.</a>
 				<footer>
-					<a href="https://medium.com/@ciromirkin/" target="_blank" class="link">Medium (Blog)</a>
-					<a href="https://www.codewars.com/users/ciro_mirkin" target="_blank" class="link">Codewars</a>
+					<a href="https://medium.com/@ciromirkin/" target="_blank" class="link">Medium (Blog).</a>
+					<a href="https://www.codewars.com/users/ciro_mirkin" target="_blank" class="link">Codewars.</a>
 				</footer>
 			</main>
 			
-		</section>
+		</footer>
 	</main>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>AOS.init();</script>
