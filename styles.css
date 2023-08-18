@@ -234,7 +234,7 @@ body {
 }
 .tech-list {
     max-width: 500px;
-    padding-inline-start: 16px;
+    padding-inline-start: 14px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -272,7 +272,7 @@ body {
 }
 .tool-list {
     max-width: 400px;
-    padding-inline-start: 16px;
+    padding-inline-start: 14px;
     list-style: none;
     display: flex;
     justify-content: left;
