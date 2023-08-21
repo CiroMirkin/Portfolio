@@ -129,7 +129,7 @@ body {
     padding: 5px 10px;
     display: grid;
     place-items: center;
-    font-size: 1.5ch;
+    font-size: 1.3ch;
     font-weight: 700;
     text-align: center;
     color: var(--font-color);
