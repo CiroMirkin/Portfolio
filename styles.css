@@ -21,6 +21,8 @@ strong {
 body {
     --border: 2px solid var(--line-color);
     --section-title-font-size: 3.2ch;
+    --max-width-containers: 600px;
+    --padding-X-in-containers: 4vw;
     background-color: var(--primary-color);
     color: var(--font-color);
     font-family: 'IBM Plex Sans', sans-serif;
@@ -84,7 +86,8 @@ body {
 }
 .projects {
     width: 100%;
-    padding: 10px 0;
+    padding-inline: 10px;
+    padding-block: var(--padding-X-in-containers);
     --modal-border: var(--border);
 	list-style: none; 
 
@@ -96,7 +99,7 @@ body {
 }
 .project {
     display: inline-block;
-    max-width: 700px;
+    max-width: var(--max-width-containers);
     height: auto;
     margin: 2px 7px 15px;
     font-family: 'IBM Plex Mono', monospace;
@@ -184,7 +187,7 @@ body {
 
 .about-me {
     width: 100%;
-    padding: 6vw 4vw;
+    padding: 6vw var(--padding-X-in-containers);
     display: grid;
     place-items: center;
     border-block-end: var(--border);
@@ -192,7 +195,7 @@ body {
 }
 .about-me main {
     display: block;
-    max-width: 600px;
+    max-width: var(--max-width-containers);
     font-size: 2ch;
     font-family: 'IBM Plex Mono', monospace;
     background: var(--primary-color);
@@ -214,18 +217,22 @@ body {
 .tech-list-section {
     width: 100%;
     height: auto;
-    padding: 10px 0;
-    padding-left: 40px;
-    display: flex;
-    justify-content: left;
+    padding: 10px;
+    padding-block: var(--padding-X-in-containers);
+    display: grid;
+    place-items: center;
     border-bottom: var(--border);
     background: var(--primary-color);
 }
 .tech-list-section__container{
-    max-width: 600px;
+    max-width: var(--max-width-containers);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
 .tech-list-section__title {
-    margin-inline-start: 10px;
+    width: 100%;
+    padding-inline-start: 4px;
     margin-block-end: 10px;
     font-family: 'IBM Plex Mono', monospace;
     font-size: var(--section-title-font-size);
@@ -233,13 +240,16 @@ body {
     text-align: left;
 }
 .tech-list {
-    max-width: 500px;
-    padding-inline-start: 14px;
+    max-width: var(--max-width-containers);
+    min-width: 300px;
+    padding-inline-start: 12px;
     list-style: none;
     display: flex;
+    justify-content: left;
     flex-wrap: wrap;
 }
 .tech-list__tech {
+    display: inline-block;
     padding: 4px;
     text-align: center;
     font-size: 1.6ch;
@@ -253,17 +263,20 @@ body {
 .tool-list-section {
     width: 100%;
     height: auto;
-    padding: 10px 0;
-    padding-left: 40px;
-    display: flex;
-    justify-content: left;
+    padding: 10px;
+    padding-block: var(--padding-X-in-containers);
+    display: grid;
+    place-items: center;
     background: var(--primary-color);
 }
 .tool-list-section__container{
-    max-width: 600px;
+    max-width: var(--max-width-containers);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
 .tool-list-section__title {
-    margin-inline-start: 10px;
+    padding-inline-start: 4px;
     margin-block-end: 10px;
     font-family: 'IBM Plex Mono', monospace;
     font-size: var(--section-title-font-size);
@@ -271,15 +284,16 @@ body {
     text-align: left;
 }
 .tool-list {
-    max-width: 400px;
-    padding-inline-start: 14px;
+    max-width: var(--max-width-containers);
+    min-width: 300px;
+    padding-inline-start: 12px;
     list-style: none;
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
 }
 .tool-list__tool {
-    width: auto;
+    display: inline-block;
     padding: 4px;
     text-align: center;
     font-size: 1.6ch;
