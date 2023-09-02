@@ -206,10 +206,11 @@ body {
     text-decoration: none;
     text-align: center;
     color: var(--font-color);
-    transition: box-shadow .5s ease-out;
+    transition: color, text-decoration .5ms ease-out;
 }
 .actions__action:hover {
-    box-shadow: inset 0 -100px 0 0 var(--secondary-color)
+    color: var(--secondary-color);
+    text-decoration: underline;
 }
 .actions__action:first-child {
     border-right: var(--modal-border);
