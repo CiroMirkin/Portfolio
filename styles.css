@@ -373,11 +373,8 @@ body {
 .social-media .link:hover {
     color: var(--secondary-color);
 }
-.social-media .link--cv {
-    margin-block: 14px;
-}
 .link--share-btn {
-    margin-top: 14px;
+    margin-block: 14px;
     border: none;
     background: var(--primary-color);
 }
