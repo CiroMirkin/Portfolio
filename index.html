@@ -109,11 +109,26 @@
 				<footer>
 					<a href="https://medium.com/@ciromirkin/" target="_blank" class="link">Medium (Blog)</a>
 					<a href="https://www.codewars.com/users/ciro_mirkin" target="_blank" class="link">Codewars</a>
+					<button id="share-btn" class="link link--share-btn">Compartir.</button>
 				</footer>
 			</main>
 		</footer>
 	</main>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>AOS.init();</script>
+	<script>
+		const data = {
+			title: 'Ciro Mirkin',
+			text: 'Portafolio • Programador Front-end',
+			url: 'https://ciromirkin.github.io/Portfolio/',
+		}
+		if(navigator.canShare && navigator.canShare(data)) {
+			document.getElementById('share-btn').addEventListener('click', () => {
+				navigator.share(data);
+			});
+		} else {
+			document.getElementById('share-btn').classList.add('link--hide');	
+		}
+	</script>
 </body>
 </html>
