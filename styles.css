@@ -208,7 +208,7 @@ body {
     color: var(--font-color);
     transition: color, text-decoration .5ms ease-out;
 }
-.actions__action:is(:hover, :focus) {
+.actions__action:hover {
     color: var(--secondary-color);
     text-decoration: underline;
 }
@@ -370,7 +370,7 @@ body {
     transition: ease 3ms color;
     color: var(--font-color);
 }
-.social-media .link:is(:hover, :focus) {
+.social-media .link:hover {
     color: var(--secondary-color);
 }
 .social-media .link--cv {
