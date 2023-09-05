@@ -364,6 +364,8 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 2ch;
     font-weight: 700;
+    text-align: left;
+    text-decoration: underline;
     border-inline-start: var(--border);
     transition: ease 3ms color;
     color: var(--font-color);
@@ -373,6 +375,15 @@ body {
 }
 .social-media .link--cv {
     margin-block: 14px;
+}
+.link--share-btn {
+    margin-top: 14px;
+    border: none;
+    background: var(--primary-color);
+}
+.link--hide {
+    display: none;
+    opacity: 0;
 }
 .social-media link:not(:last-child){
     border-block-end: var(--border);
@@ -385,5 +396,4 @@ body {
 .social-media main footer {
     display: flex;
     flex-direction: column;
-
 }
