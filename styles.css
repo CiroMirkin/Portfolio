@@ -64,11 +64,11 @@ body {
     font-weight: 500;
     cursor: default;
     border: 4px solid var(--line-color);
-    border-radius-top: 4px;
     background-color: var(--primary-color);
 }
 .text__text h1 {
     display: block;
+    margin-block: 6px 4px;
     font-size: 12ch;
     line-height: 70px;
     font-weight: 700;
