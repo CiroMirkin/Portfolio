@@ -191,7 +191,7 @@ body {
 .project__img-container img {
     object-fit: contain;
     width: 100%;
-    height: auto;
+    max-height: 290px;
 }
 .actions {
     width: 100%;
