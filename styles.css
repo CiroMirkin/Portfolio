@@ -108,6 +108,26 @@ body {
     font-size: 3ch;
 }
 
+.bouncer-animation {
+	translate: 0 -2rem;
+	animation: bounce 900ms 3 alternate-reverse;
+	animation-delay: 1s;
+}
+@keyframes bounce {
+	0% {
+		translate: 0 -2rem;
+	}
+	30% {
+		translate: 0 0;
+	}
+	60%{
+		translate: 0 -0.8rem;
+	}
+	100% {
+		translate: 0 0;
+	}
+}
+
 /*  */
 
 .projects-section {
@@ -347,17 +367,17 @@ body {
 
 .social-media {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+	justify-content: left;
+	flex-direction: row;
     border-block: var(--border);
-    background: var(--primary-color);
-}
-.social-media__color {
     background: var(--secondary-color);
 }
 .social-media main {
+	width: 56vw;
     display: flex;
     flex-direction: column;
     background: var(--primary-color);
+	padding-left: 20vw;
 }
 .social-media .link {
     padding: 10px 14px;
@@ -366,7 +386,7 @@ body {
     font-weight: 700;
     text-align: left;
     text-decoration: underline;
-    border-inline-start: var(--border);
+    border-inline: var(--border);
     transition: ease 3ms color;
     color: var(--font-color);
 }
