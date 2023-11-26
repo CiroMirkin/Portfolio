@@ -125,8 +125,9 @@ body {
 	list-style: none; 
 
     display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 
 }
@@ -134,7 +135,7 @@ body {
     display: inline-block;
     max-width: var(--max-width-containers);
     height: auto;
-    margin: 2px 7px 15px;
+    margin: 10px 6px;
     font-family: 'IBM Plex Mono', monospace;
     border: var(--modal-border);
     background: #F7F9FB;
