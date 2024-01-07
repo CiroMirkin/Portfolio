@@ -9,7 +9,7 @@
     --project-font-color: #202020;
 }
 ::selection {
-    background-color: #999dbe;
+    background-color: #FDCE7D;
 }
 span {
     display: inline-block;
@@ -166,7 +166,8 @@ body {
     padding: 5px 10px;
     display: grid;
     place-items: center;
-    font-size: 1.3ch;
+    font-size: 1.4ch;
+    line-height: 1.5;
     font-weight: 700;
     text-align: center;
     color: var(--project-font-color);
@@ -203,10 +204,10 @@ body {
     border-width: 2px;
     color: var(--font-color);
     background: var(--project-card-color);
-    transition: color, text-decoration .5ms ease-out;
+    transition: background, text-decoration .500ms ease-out;
 }
 .actions__action:hover {
-    color: var(--secondary-color);
+    background: #FDCE7D;
     text-decoration: underline;
 }
 .actions__action:last-child {
