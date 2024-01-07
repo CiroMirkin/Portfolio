@@ -200,8 +200,8 @@ body {
 }
 .actions__action {
     padding: 4px 10px 5px;
-    font-size: .9rem;
-    line-height: 1rem;
+    font-size: 1rem;
+    line-height: 1.1rem;
     font-weight: 700;
     text-decoration: none;
     text-align: center;
