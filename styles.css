@@ -1,10 +1,10 @@
 *{box-sizing: border-box;margin: 0; padding: 0;}
 
 .theme--light {
-    --font-color: #000;
-    --line-color: #000;
-    --primary-color: #faefd1; /*F7F9FB*/
-    --secondary-color: #990808;
+    --font-color: #202020;
+    --line-color: #202020;
+    --primary-color: #FEF9F2; /*F7F9FB*/
+    --secondary-color: #c54c5e;
 }
 ::selection {
     background-color: #999dbe;
