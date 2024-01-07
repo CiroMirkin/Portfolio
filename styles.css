@@ -31,6 +31,23 @@ body {
     font-weight: 300;
 }
 
+.bi  {
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.bi-chevron-down {
+    width: 1.6rem;
+    height: 1.6rem;
+    background-image: url('./chevron-down-icon.svg');
+}
+.bi-github {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-image: url('./github-icon.svg');
+}
+
 .description {
     width: 100%;
     height: 74vh;
@@ -199,9 +216,11 @@ body {
     background-color: var(--secondary-color);
 }
 .actions__action {
+    display: grid;
+    place-items: center;
     padding: 4px 10px 5px;
-    font-size: 1rem;
-    line-height: 1.1rem;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
     font-weight: 700;
     text-decoration: none;
     text-align: center;
@@ -210,6 +229,9 @@ body {
     color: var(--font-color);
     background: var(--project-card-color);
     transition: background, text-decoration .500ms ease-out;
+}
+.actions__action .bi {
+    padding: 4px 10px 1px;
 }
 .actions__action:hover {
     background: #FDCE7D;
