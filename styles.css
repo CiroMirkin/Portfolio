@@ -24,7 +24,6 @@ body {
     --border: 2px solid var(--line-color);
     --section-title-font-size: 3.2ch;
     --max-width-containers: 600px;
-    --padding-X-in-containers: 4vw;
     background-color: var(--primary-color);
     color: var(--font-color);
     font-family: 'IBM Plex Sans', sans-serif;
@@ -139,7 +138,7 @@ body {
 .projects {
     width: 100%;
     padding-inline: 10px;
-    padding-block: var(--padding-X-in-containers);
+    padding-block: 4vw;
     --modal-border: var(--border);
 	list-style: none; 
 
@@ -154,7 +153,7 @@ body {
     display: inline-block;
     max-width: var(--max-width-containers);
     height: auto;
-    margin: 10px 6px;
+    margin: 16px 6px;
     font-family: 'IBM Plex Mono', monospace;
     border: var(--modal-border);
     background: var(--project-card-color);
@@ -245,7 +244,7 @@ body {
 
 .about-me {
     width: 100%;
-    padding: 6vw var(--padding-X-in-containers);
+    padding: 6rem 1rem;
     display: grid;
     place-items: center;
     border-block-end: var(--border);
@@ -276,7 +275,7 @@ body {
     width: 100%;
     height: auto;
     padding: 10px;
-    padding-block: var(--padding-X-in-containers);
+    padding-block: 4vw;
     display: grid;
     place-items: center;
     border-bottom: var(--border);
@@ -323,7 +322,7 @@ body {
     width: 100%;
     height: auto;
     padding: 10px;
-    padding-block: var(--padding-X-in-containers);
+    padding-block: 4vw;
     display: grid;
     place-items: center;
     background: var(--primary-color);
