@@ -259,13 +259,13 @@ body {
     border: var(--border);
 }
 .about-me main header {
-    padding: 8px 12px;
-    padding-right: 4px;
+    padding: 12px 14px;
+    padding-right: 6px;
     border-block-end: var(--border);
 }
 .about-me main .text {
-    padding: 8px 12px;
-    padding-right: 4px;
+    padding: 12px 14px;
+    padding-right: 6px;
 
 }
 
