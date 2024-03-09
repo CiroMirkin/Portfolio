@@ -86,7 +86,7 @@ body {
     padding-inline-start: 6px;
     width: 100%;
     font-weight: 700;
-    font-size: 2.2ch;
+    font-size: 2.4ch;
     line-height: 40px;
     color: var(--font-color);
     background: var(--secondary-color);
@@ -131,6 +131,7 @@ body {
 }
 .projects-section h2 {
     padding-block: 20px;
+    font-size: 2.5ch;
     font-family: 'IBM Plex Mono', monospace;
     text-align: center;
     font-size: var(--section-title-font-size); 
@@ -164,12 +165,12 @@ body {
     color: var(--project-font-color);
 }
 .project__title {
-    font-size: 2.8ch;
+    font-size: 3ch;
     font-weight: 700;
     margin-block-end: 5px;
 }
 .project__description {
-    font-size: 2.1ch;
+    font-size: 2.4ch;
     font-weight: 200;
     margin-block-end: 10px;
 }
@@ -255,7 +256,7 @@ body {
 .about-me main {
     display: block;
     max-width: var(--max-width-containers);
-    font-size: 2ch;
+    font-size: 2.4ch;
     font-family: 'IBM Plex Mono', monospace;
     background: var(--primary-color);
     border: var(--border);
