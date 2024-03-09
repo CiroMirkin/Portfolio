@@ -30,6 +30,13 @@ body {
     font-weight: 700;
 }
 
+h2 {
+    font-size: 3.2ch;
+    line-height: 3ch;
+    font-weight: 200;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
 h4 {
     font-size: 3ch;
     line-height: 3.1ch;
@@ -84,7 +91,7 @@ p:first-child:nth-last-child(n+1) ~ p {
     justify-content: center;
 }
 
-.text__text {
+.text h1 {
     width: 100%;
     padding-inline: 2vw;
     padding-block: 4vw;
@@ -97,13 +104,10 @@ p:first-child:nth-last-child(n+1) ~ p {
     border: 4px solid var(--line-color);
     background-color: var(--primary-color);
 }
-.text__color {
+.text h2 {
     display: block;
-    padding-block-start: 2px;
     padding-inline-start: 6px;
     width: 100%;
-    font-size: 2.4ch;
-    line-height: 40px;
     color: var(--font-color);
     background: var(--secondary-color);
     border-inline: 4px solid var(--line-color);
@@ -142,10 +146,7 @@ p:first-child:nth-last-child(n+1) ~ p {
 }
 .projects-section h2 {
     padding-block: 20px;
-    font-size: 2.5ch;
-    font-family: 'IBM Plex Mono', monospace;
     text-align: center;
-    font-size: var(--section-title-font-size); 
 }
 .projects {
     width: 100%;
