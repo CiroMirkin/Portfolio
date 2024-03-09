@@ -285,15 +285,17 @@ p:first-child:nth-last-child(n+1) ~ p {
 /* */
 
 .social-media {
-    display: grid;
-	justify-content: left;
-	flex-direction: row;
-    border-block: var(--border);
-    background: var(--secondary-color);
+    display: flex;
+	justify-content: center;
+	flex-direction: column;
+    border-bottom: var(--border);
+    background: var(--primary-color);
     font-family: 'IBM Plex Mono', monospace;
 }
+.social-media header {
+    text-align: center;
+}
 .social-media main {
-	width: 56vw;
     display: flex;
     flex-direction: column;
     background: var(--primary-color);
@@ -305,7 +307,6 @@ p:first-child:nth-last-child(n+1) ~ p {
     font-size: 2ch;
     text-align: left;
     text-decoration: underline;
-    border-inline: var(--border);
     transition: ease 3ms color;
     color: var(--font-color);
 }
@@ -314,13 +315,4 @@ p:first-child:nth-last-child(n+1) ~ p {
 }
 .social-media link:not(:last-child){
     border-block-end: var(--border);
-}
-.social-media main header {
-    display: flex;
-    flex-direction: column;
-
-}
-.social-media main footer {
-    display: flex;
-    flex-direction: column;
 }
