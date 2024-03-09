@@ -192,7 +192,9 @@ body {
     font-weight: 700;
     text-align: center;
     color: var(--project-font-color);
-    border: var(--modal-border);
+}
+.skils__skil:not(:last-child) {
+    border-right: var(--border);
 }
 .project__img-container {
     display: grid;
