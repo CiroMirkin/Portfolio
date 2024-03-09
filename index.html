@@ -36,10 +36,10 @@
 				<li class="project" data-aos="fade-up">
 					<div class="project__texts">
 						<p class="project__title">Memotest</p>
-						<p class="project__description">Un juego online de memoria que cuenta con varias temáticas las cuales pueden cambiarce sin tener que volver a desplegar la aplicación.</p>
+						<p class="project__description">Un juego online de memoria que cuenta con varias temáticas las cuales pueden cambiarse sin tener que volver a desplegar la aplicación.</p>
 					</div>
 					<div class="actions">
-						<a href="https://cm-memotest.netlify.app/" target="_blank" class="actions__action">Ver projecto</a>
+						<a href="https://cm-memotest.netlify.app/" target="_blank" class="actions__action">Ver proyecto</a>
 						<a href="https://github.com/CiroMirkin/memotest_TS" target="_blank" class="actions__action"><i class="bi bi-github"></i></a>
 					</div>
 					<div class="project__img-container">
@@ -54,10 +54,10 @@
 				<li class="project" data-aos="fade-up">
 					<div class="project__texts">
 						<p class="project__title">Boar</p>
-						<p class="project__description">Aplicación web para gestionar tareas que como Trello puede adaptarse a la forma de trabajo del usuario.</p>
+						<p class="project__description">Aplicación web para gestionar tareas al estilo de Trello adaptándose a la forma de trabajo del usuario.</p>
 					</div>
 					<div class="actions">
-						<a href="https://cm-boar.netlify.app/" target="_blank" class="actions__action">Ver projecto</a>
+						<a href="https://cm-boar.netlify.app/" target="_blank" class="actions__action">Ver proyecto</a>
 						<a href="https://github.com/CiroMirkin/Boar" target="_blank" class="actions__action"><i class="bi bi-github"></i></a>
 					</div>
 					<div class="project__img-container">
@@ -75,7 +75,7 @@
 		<section class="about-me">
 			<main data-aos="fade-up">
 				<header>
-					<P>+3 años de experiencia desarrollando aplicaciones web.</P>
+					<P>+3 años de experiencia programando aplicaciones web.</P>
 				</header>
 				<div class="text">
 					<p>Al trabajar primero que nada comprendo los objetivos de mis clientes para así poder ayudarlos.</p>
@@ -83,7 +83,7 @@
 				</div>
 			</main>
 		</section>
-		<section class="tech-list-section">
+		<!-- <section class="tech-list-section">
 			<div class="tech-list-section__container">
 				<p class="tech-list-section__title">Tecnologías.</p>
 				<ul class="tech-list">
@@ -97,19 +97,7 @@
 					<li class="tech-list__tech">MySQL<li>
 				</ul>
 			</div>
-		</section>
-		<section class="tool-list-section">
-			<div class="tool-list-section__container">
-				<p class="tool-list-section__title">Herramientas.</p>
-				<ul class="tool-list">
-					<li class="tool-list__tool">VS Code</li>
-					<li class="tool-list__tool">Git</li>
-					<li class="tool-list__tool">GitHub</li>
-					<li class="tool-list__tool">Chat GPT</li>
-					<li class="tool-list__tool">Figma</li>
-				</ul>
-			</div>
-		</section>
+		</section> -->
 		<!-- </section> -->
 		<footer class="social-media">
 			<main>
@@ -117,7 +105,6 @@
 					<a href="https://drive.google.com/file/d/18M0giAwgBsu-jgp5PO0RCV99Ce9M5Ps9/view?usp=drive_link" class="link" target="_blank">Ver CV</a>
 					<a href="mailto:ciromirkin@gmail.com" class="link">Gmail</a>
 					<a href="https://www.linkedin.com/in/ciro-mirkin-775a85278" target="_blank" class="link">LinkedIn</a>
-					<button id="share-btn" class="link link--share-btn">Compartir.</button>
 				</header>
 				<footer>
 					<a href="https://github.com/CiroMirkin" target="_blank" class="link">GitHub</a>
@@ -128,18 +115,5 @@
 	</main>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>AOS.init();</script>
-	<script>
-		const data = {
-			text: 'Mira este portafolio -> ',
-			url: 'https://ciromirkin.github.io/Portfolio/',
-		}
-		if(navigator.canShare && navigator.canShare(data)) {
-			document.getElementById('share-btn').addEventListener('click', () => {
-				navigator.share(data);
-			});
-		} else {
-			document.getElementById('share-btn').classList.add('link--hide');	
-		}
-	</script>
 </body>
 </html>
