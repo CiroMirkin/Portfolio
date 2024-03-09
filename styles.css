@@ -188,7 +188,7 @@ p:first-child:nth-last-child(n+1) ~ p {
     background: var(--project-card-color);
 }
 .project__texts {
-    padding: 10px 10px 10px 15px;
+    padding: 5px 10px 10px;
     text-align: left;
 }
 .skils {
