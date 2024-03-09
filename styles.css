@@ -266,6 +266,7 @@ p:first-child:nth-last-child(n+1) ~ p {
     place-items: center;
     border-block-end: var(--border);
     background: var(--secondary-color);
+    font-family: 'IBM Plex Mono', monospace;
 }
 .about-me main {
     display: block;
@@ -289,6 +290,7 @@ p:first-child:nth-last-child(n+1) ~ p {
 	flex-direction: row;
     border-block: var(--border);
     background: var(--secondary-color);
+    font-family: 'IBM Plex Mono', monospace;
 }
 .social-media main {
 	width: 56vw;
