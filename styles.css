@@ -263,13 +263,13 @@ body {
 }
 .about-me main header {
     padding: 12px 14px;
-    padding-right: 6px;
     border-block-end: var(--border);
 }
 .about-me main .text {
     padding: 12px 14px;
-    padding-right: 6px;
-
+}
+.about-me main .text p:not(:first-child) {
+    margin-block-start: 14px;
 }
 
 /* */
