@@ -20,6 +20,15 @@ b {
 strong {
     font-weight: 700;
 }
+p {
+    font-size: 2.4ch;
+    line-height: 2.4ch;
+    font-weight: 200;
+    color: var(--font-color);
+}
+p:first-child:nth-last-child(n+1) ~ p {
+    margin-block-start: 14px;
+}
 body {
     --border: 2px solid var(--line-color);
     --section-title-font-size: 3.2ch;
@@ -169,11 +178,6 @@ body {
     font-weight: 700;
     margin-block-end: 5px;
 }
-.project__description {
-    font-size: 2.4ch;
-    font-weight: 200;
-    margin-block-end: 10px;
-}
 .skils {
     height: auto;
     width: 100%;
@@ -256,8 +260,6 @@ body {
 .about-me main {
     display: block;
     max-width: var(--max-width-containers);
-    font-size: 2.4ch;
-    font-family: 'IBM Plex Mono', monospace;
     background: var(--primary-color);
     border: var(--border);
 }
@@ -267,9 +269,6 @@ body {
 }
 .about-me main .text {
     padding: 12px 14px;
-}
-.about-me main .text p:not(:first-child) {
-    margin-block-start: 14px;
 }
 
 /* */
