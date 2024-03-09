@@ -207,10 +207,10 @@ p:first-child:nth-last-child(n+1) ~ p {
     font-size: .9rem;
     line-height: 1rem;
     text-align: center;
-    color: var(--project-font-color);
-}
-.skils__skil:not(:last-child) {
-    border-right: var(--border);
+    color: var(--font-color);
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    border: var(--border);
 }
 .project__img-container {
     display: grid;
