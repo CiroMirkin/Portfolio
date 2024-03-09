@@ -123,6 +123,8 @@ p:first-child:nth-last-child(n+1) ~ p {
     display: block;
     padding-inline-start: 6px;
     width: 100%;
+    font-size: 2.6ch;
+    line-height: 3ch;
     color: var(--font-color);
     background: var(--secondary-color);
     border-inline: 4px solid var(--line-color);
