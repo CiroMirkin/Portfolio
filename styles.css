@@ -285,6 +285,7 @@ p:first-child:nth-last-child(n+1) ~ p {
 /* */
 
 .social-media {
+    padding: 2rem;
     display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -294,24 +295,30 @@ p:first-child:nth-last-child(n+1) ~ p {
 }
 .social-media header {
     text-align: center;
+    margin-bottom: 2rem;
 }
 .social-media main {
+    padding: 0 40px;
     display: flex;
     flex-direction: column;
+    gap: 6px;
     background: var(--primary-color);
 }
 .social-media .link {
-    padding: 10px 14px;
-	padding-left: 20vw;
+    width: auto;
+    padding: 4px;
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 2ch;
-    text-align: left;
-    text-decoration: underline;
-    transition: ease 3ms color;
+    font-size: 2.4ch;
+    line-height: 2.5ch;
+    text-align: center;
+    text-decoration: none;
+    transition: background, text-decoration .500ms ease-out;
     color: var(--font-color);
+    border: var(--border);
 }
 .social-media .link:hover {
-    color: var(--secondary-color);
+    background: #FDCE7D;
+    text-decoration: underline;
 }
 .social-media link:not(:last-child){
     border-block-end: var(--border);
