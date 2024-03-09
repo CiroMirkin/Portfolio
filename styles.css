@@ -102,10 +102,6 @@ p:first-child:nth-last-child(n+1) ~ p {
     border-inline: 4px solid var(--line-color);
     border-bottom: 4px solid var(--line-color);
 }
-.text__color p {
-    padding-block: 26px 5px;
-    padding-inline-start: 6px;
-}
 
 /*  */
 
@@ -295,15 +291,6 @@ p:first-child:nth-last-child(n+1) ~ p {
 }
 .social-media .link:hover {
     color: var(--secondary-color);
-}
-.link--share-btn {
-    margin-block: 14px;
-    border: none;
-    background: var(--primary-color);
-}
-.link--hide {
-    display: none;
-    opacity: 0;
 }
 .social-media link:not(:last-child){
     border-block-end: var(--border);
