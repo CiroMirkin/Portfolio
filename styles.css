@@ -287,10 +287,10 @@ p:first-child:nth-last-child(n+1) ~ p {
 /* */
 
 .social-media {
+    width: 100%;
     padding: 2rem;
-    display: flex;
-	justify-content: center;
-	flex-direction: column;
+    display: grid;
+    place-items: center;
     border-bottom: var(--border);
     background: var(--primary-color);
     font-family: 'IBM Plex Mono', monospace;
@@ -300,14 +300,12 @@ p:first-child:nth-last-child(n+1) ~ p {
     margin-bottom: 2rem;
 }
 .social-media main {
-    padding: 0 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+    max-width: var(--max-width-containers);
     background: var(--primary-color);
 }
 .social-media .link {
-    width: auto;
+    display: inline-block;
+    width: 100%;
     padding: 4px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 2.4ch;
@@ -317,6 +315,9 @@ p:first-child:nth-last-child(n+1) ~ p {
     transition: background, text-decoration .500ms ease-out;
     color: var(--font-color);
     border: var(--border);
+}
+.social-media .link:not(:last-child) {
+    margin-bottom: 8px;
 }
 .social-media .link:hover {
     background: #FDCE7D;
