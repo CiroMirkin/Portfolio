@@ -14,15 +14,6 @@
 span {
     display: inline-block;
 }
-p {
-    font-size: 2.4ch;
-    line-height: 2.4ch;
-    font-weight: 200;
-    color: var(--font-color);
-}
-p:first-child:nth-last-child(n+1) ~ p {
-    margin-block-start: 14px;
-}
 body {
     --border: 2px solid var(--line-color);
     --section-title-font-size: 3.2ch;
@@ -30,7 +21,6 @@ body {
     background-color: var(--primary-color);
     color: var(--font-color);
     font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 300;
 }
 
 .strong {
@@ -38,6 +28,17 @@ body {
 }
 .very-strong {
     font-weight: 700;
+}
+
+p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2.4ch;
+    line-height: 2.4ch;
+    font-weight: 200;
+    color: var(--font-color);
+}
+p:first-child:nth-last-child(n+1) ~ p {
+    margin-block-start: 14px;
 }
 
 .bi  {
