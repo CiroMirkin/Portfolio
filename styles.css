@@ -43,9 +43,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 h2 {
-    font-size: 3.2ch;
-    line-height: 3ch;
+    font-size: 2rem;
+    line-height: 2.1rem;
     font-weight: 200;
+    color: var(--font-color);
     font-family: 'IBM Plex Mono', monospace;
 }
 
