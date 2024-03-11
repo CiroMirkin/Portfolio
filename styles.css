@@ -16,7 +16,6 @@ span {
 }
 body {
     --border: 2px solid var(--line-color);
-    --section-title-font-size: 3.2ch;
     --max-width-containers: 600px;
     background-color: var(--primary-color);
     color: var(--font-color);
@@ -39,9 +38,6 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-.strong {
-    font-weight: 500;
-}
 .very-strong {
     font-weight: 700;
 }
