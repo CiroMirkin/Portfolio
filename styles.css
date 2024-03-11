@@ -51,9 +51,9 @@ h2 {
 }
 
 h3 {
-    font-size: 3ch;
-    line-height: 3.1ch;
-    font-weight: 200;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 700;
     color: var(--font-color);
 }
 
