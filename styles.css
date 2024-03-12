@@ -16,7 +16,6 @@ span {
 }
 body {
     --border: 2px solid var(--line-color);
-    --section-title-font-size: 3.2ch;
     --max-width-containers: 600px;
     background-color: var(--primary-color);
     color: var(--font-color);
@@ -39,35 +38,33 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-.strong {
-    font-weight: 500;
-}
 .very-strong {
     font-weight: 700;
 }
 
 h2 {
-    font-size: 3.2ch;
-    line-height: 3ch;
+    font-size: 2rem;
+    line-height: 2.1rem;
     font-weight: 200;
+    color: var(--font-color);
     font-family: 'IBM Plex Mono', monospace;
 }
 
 h3 {
-    font-size: 3ch;
-    line-height: 3.1ch;
-    font-weight: 200;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 700;
     color: var(--font-color);
 }
 
 p {
-    font-size: 2.4ch;
-    line-height: 2.4ch;
+    font-size: 1.3rem;
+    line-height: 1.4;
     font-weight: 200;
     color: var(--font-color);
 }
 p:first-child:nth-last-child(n+1) ~ p {
-    margin-block-start: 14px;
+    margin-block-start: .6em;
 }
 
 .bi  {
@@ -113,9 +110,8 @@ p:first-child:nth-last-child(n+1) ~ p {
     
     font-family: 'IBM Plex Mono', monospace;
     text-align: left;
-    font-size: 9ch;
-    line-height: 90px;
-    cursor: default;
+    font-size: 5rem;
+    line-height: 5.2rem;
     border: 4px solid var(--line-color);
     background-color: var(--primary-color);
 }
@@ -201,14 +197,15 @@ p:first-child:nth-last-child(n+1) ~ p {
     flex-wrap: wrap;
     gap: 6px;
     list-style: none;
-    margin-top: 10px;
-    padding: 0 10px 10px;
-    font-size: 1.6ch;
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    border-top: var(--border);
 }
 .skils li:first-child:before {
     content: ' * ';
 }
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 500px) {
     /* Vista en computadora */
     .skils {
         flex-direction: row;
@@ -312,8 +309,9 @@ p:first-child:nth-last-child(n+1) ~ p {
     width: 100%;
     padding: 4px;
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 2.4ch;
-    line-height: 2.5ch;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 700;
     text-align: center;
     text-decoration: none;
     transition: background, text-decoration .500ms ease-out;
