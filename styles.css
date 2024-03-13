@@ -4,9 +4,9 @@
     --border: 2px solid var(--line-color);
     --max-width-containers: 600px;
     /* Colors */
-    --accent-color: #FDCE7D;
     --font-color: #202020;
     --line-color: #202020;
+    --accent-color: #FDCE7D;
     --primary-color: #FEF9F2; /*F7F9FB*/
     --secondary-color: #c54c5e;
     --project-card-color: #F7F9FB;
@@ -270,7 +270,7 @@ p:first-child:nth-last-child(n+1) ~ p {
     padding: 4px 10px 1px;
 }
 .actions__action:hover {
-    background: #FDCE7D;
+    background: var(--accent-color);
     text-decoration: underline;
 }
 .actions__action:last-child {
@@ -300,7 +300,6 @@ p:first-child:nth-last-child(n+1) ~ p {
     color: var(--font-color);
     background-color: var(--primary-color);
     text-decoration: none;
-    word-spacing: 0.15em;
     font-family: 'IBM Plex Mono', monospace;
     transition: background, text-decoration .500ms ease-out;
 }
@@ -380,7 +379,7 @@ p:first-child:nth-last-child(n+1) ~ p {
     margin-bottom: 8px;
 }
 .social-media .link:hover {
-    background: #FDCE7D;
+    background: var(--accent-color);
     text-decoration: underline;
 }
 .social-media link:not(:last-child){
