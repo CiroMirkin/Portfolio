@@ -26,6 +26,7 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
     
 }
+/* Styles for ScrollBar */
 body::-webkit-scrollbar {
     width: 9px;
 }
@@ -42,6 +43,8 @@ body::-webkit-scrollbar-thumb {
         scrollbar-color: var(--secondary-color) var(--primary-color);
     }
 }
+
+/* Reusable styles */
 
 .very-strong {
     font-weight: 700;
@@ -97,6 +100,8 @@ p:first-child:nth-last-child(n+1) ~ p {
     height: 1.2rem;
     background-image: url('./github-icon.svg');
 }
+
+/* From here there are just unique styles */
 
 .description {
     width: 100%;
