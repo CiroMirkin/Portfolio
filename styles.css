@@ -81,6 +81,8 @@ p {
     color: var(--font-color);
 }
 p:first-child:nth-last-child(n+1) ~ p {
+	/* This styles are for: */
+	/*  When the tag P is inside of a containter and there are more than one P tag */
     margin-block-start: .6em;
 }
 
