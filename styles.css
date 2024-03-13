@@ -42,6 +42,11 @@ body::-webkit-scrollbar-thumb {
     font-weight: 700;
 }
 
+.border {
+    border: var(--border);
+    border-radius: 0;
+}
+
 h2 {
     font-size: 2rem;
     line-height: 2.1rem;
@@ -181,7 +186,6 @@ p:first-child:nth-last-child(n+1) ~ p {
     height: auto;
     margin: 16px 6px;
     font-family: 'IBM Plex Mono', monospace;
-    border: var(--modal-border);
     background: var(--project-card-color);
 }
 .project__texts {
@@ -278,7 +282,6 @@ p:first-child:nth-last-child(n+1) ~ p {
     display: block;
     max-width: var(--max-width-containers);
     background: var(--primary-color);
-    border: var(--border);
 }
 .about-me main header {
     padding: 12px 14px;
