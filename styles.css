@@ -300,6 +300,7 @@ p:first-child:nth-last-child(n+1) ~ p {
     color: var(--font-color);
     background-color: var(--primary-color);
     text-decoration: none;
+    word-spacing: 0.15em;
     font-family: 'IBM Plex Mono', monospace;
     transition: background, text-decoration .500ms ease-out;
 }
