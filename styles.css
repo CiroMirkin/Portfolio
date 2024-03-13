@@ -10,7 +10,6 @@
     --primary-color: #FEF9F2; /*F7F9FB*/
     --secondary-color: #c54c5e;
     --project-card-color: #F7F9FB;
-    --project-font-color: #202020;
 }
 ::selection {
     background-color: var(--accent-color);
