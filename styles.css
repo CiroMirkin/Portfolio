@@ -348,6 +348,28 @@ p:first-child:nth-last-child(n+1) ~ p {
 .about-me main .text {
     padding: 12px 14px;
 }
+.about-me footer {
+    margin-top: 2rem;
+}
+.btn-large {
+    display: block;
+    padding-inline: 18px;
+    padding-block: 6px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--font-color);
+    border: var(--border);
+    background: var(--primary-color);
+    transition: background, text-decoration .500ms ease-out;
+}
+.btn-large:hover {
+    text-decoration: underline;
+    background: var(--accent-color);
+}
 
 /* */
 
