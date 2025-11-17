@@ -222,6 +222,18 @@ p + p {
 }
 
 @media only screen and (min-width: 500px) {
+    .hero {
+        position: sticky;
+        top: 0;
+        z-index: -1;
+    }
+
+    .page-main-content {
+        position: relative;
+        z-index: 1;
+        background-color: var(--primary-color);
+    }
+    
     .project__skills {
         flex-direction: row;
         gap: 14px;
