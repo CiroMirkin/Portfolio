@@ -27,42 +27,41 @@
 </head>
 <body>
 
-	<section class="description">
-		<div class="text">
+	<header class="hero">
+		<div class="hero-text">
 			<h1 class="very-strong">Ciro Mirkin</h1>
 			<h2 class="very-strong">Programador FrontEnd ッ</h2>
 		</div>
-	</section>
-
-	<div class="icon-container"><i class="bi bi-chevron-down bouncer-animation"></i></div>
+		<div class="icon-container">
+			<i class="bi bi-chevron-down bouncer-animation"></i>
+		</div>
+	</header>
 	
 	<main class="page-main-content">
 
 		<section class="projects-section">
-			<h2 class="very-strong">Portafolio.</h2>
+			<h2 class="section-title very-strong">Portafolio.</h2>
 
 			<ul class="projects">
 			
 				<li class="project border" data-aos="fade-up">
 					<div class="project__texts">
 						<h3 class="project__title very-strong">Boar</h3>
-						<div>
-							<p>Una aplicación para administrar tareas sin distracciones.</p>
-						</div>
+						<p>Una aplicación para administrar tareas sin distracciones.</p>
 					</div>
-					<div class="actions">
+					<div class="project__actions">
 						<a href="https://cm-boar.netlify.app/" target="_blank" class="actions__action very-strong">Ver proyecto</a>
 						<a href="https://github.com/CiroMirkin/Boar" target="_blank" class="actions__action github-action very-strong" title="GitHub"><i class="bi bi-github"></i></a>
 					</div>
 					<div class="project__img-container">
 						<img src="boar_app_by_ciro_mirkin.webp" alt="Captura de pantalla de Boar una aplicación para gestionar tareas.">
 					</div>
-					<ul class="skils very-strong">
+					<ul class="project__skills very-strong">
 						<li>TypeScript</li>
-						<li> * React</li>
-						<li> * Supabase</li>
-						<li> * Vitest</li>
-						<li> * Tailwind CSS</li>
+						<li>React</li>
+						<li>Supabase</li>
+						<li>Vitest</li>
+						<li>Tailwind CSS</li>
 					</ul>
 				</li>
 				<li class="project border" data-aos="fade-up">
@@ -70,17 +69,17 @@
 						<h3 class="project__title very-strong">Memotest</h3>
 						<p>Un juego online de memoria que cuenta con diversas temáticas.</p>
 					</div>
-					<div class="actions">
+					<div class="project__actions">
 						<a href="https://cm-memotest.netlify.app/" target="_blank" class="actions__action very-strong">Ver proyecto</a>
 						<a href="https://github.com/CiroMirkin/memotest_TS" target="_blank" class="actions__action github-action very-strong" title="GitHub"><i class="bi bi-github"></i></a>
 					</div>
 					<div class="project__img-container">
 						<img src="./memotest_app_by_ciro_mirkin.webp" alt="Captura de pantalla de un Memotest un juego de memoria online.">
 					</div>
-					<ul class="skils very-strong">
+					<ul class="project__skills very-strong">
 						<li>TypeScript</li>
-						<li> * HTML</li>
-						<li> * CSS</li>
+						<li>HTML</li>
+						<li>CSS</li>
 					</ul>
 				</li>
 
@@ -88,25 +87,21 @@
 
 		</section>
 
-		<section class="my-content">
-			<main>
-				<a href="https://medium.com/@ciromirkin/" class="content-card border" target="_blank" data-aos="fade-up">
-					<header class="very-strong">Medium</header>
-					<p>Bitácora de código donde explico como resuelvo problemas que enfrento al crear un nuevo proyecto.</p>
-				</a>
-				<a href="https://github.com/CiroMirkin/Apuntes/" class="content-card border" target="_blank" data-aos="fade-up">
-					<header class="very-strong">Apuntes</header>
-					<div>
-						<p>Actualmente tengo más de 50 apuntes sobre programación y publico uno nuevo todos los meses.</p>
-					</div>
-				</a>
-			</main>
+		<section class="my-content-section">
+			<a href="https://medium.com/@ciromirkin/" class="content-card border" target="_blank" data-aos="fade-up">
+				<h3 class="very-strong">Medium</h3>
+				<p>Bitácora de código donde explico como resuelvo problemas que enfrento al crear un nuevo proyecto.</p>
+			</a>
+			<a href="https://github.com/CiroMirkin/Apuntes/" class="content-card border" target="_blank" data-aos="fade-up">
+				<h3 class="very-strong">Apuntes</h3>
+				<p>Actualmente tengo más de 50 apuntes sobre programación y publico uno nuevo todos los meses.</p>
+			</a>
 		</section>
 
-		<section class="about-me">
-			<main class="border" data-aos="fade-up">
+		<section class="about-me-section" data-aos="fade-up">
+			<div class="about-me-card border">
 				<header>
-					<P>+3 años programando aplicaciones web.</P>
+					<p>+3 años programando aplicaciones web.</p>
 				</header>
 				<div class="text">
 					<p>Me esfuerzo en crear código y productos de calidad.</p>
@@ -114,28 +109,22 @@
 					<p>Creo que es importante escribir código simple, documentado y respaldado por pruebas automáticas, al igual que lo es crear interfaces atractivas.</p>
 					<p>Programo hace +6 años.</p>
 				</div>
-			</main>
-			<footer>
-				<a href="https://drive.google.com/file/d/1gDeQeLcDseYf_zkAbEGjMlaJZRQ_knAp/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn-large">Ver CV</a>
-			</footer>
+			</div>
+			<a href="https://drive.google.com/file/d/1gDeQeLcDseYf_zkAbEGjMlaJZRQ_knAp/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn-large">Ver CV</a>
 		</section>
 
-		<footer class="social-media">
-			<header>
-				<h2 class="very-strong">Contacto.</h2>
-			</header>
-			<main>
-				<a href="mailto:ciromirkin@gmail.com" class="link">Gmail</a>
-				<a href="https://www.linkedin.com/in/ciro-mirkin-775a85278" target="_blank" class="link">LinkedIn</a>
-				<a href="https://github.com/CiroMirkin" target="_blank" class="link">GitHub</a>
-			</main>
-		</footer>
-
 	</main>
+	
+	<footer class="footer-section">
+		<h2 class="section-title very-strong">Contacto.</h2>
+		<div class="social-media">
+			<a href="mailto:ciromirkin@gmail.com" class="link">Gmail</a>
+			<a href="https://www.linkedin.com/in/ciro-mirkin-775a85278" target="_blank" class="link">LinkedIn</a>
+			<a href="https://github.com/CiroMirkin/" target="_blank" class="link">GitHub</a>
+		</div>
+	</footer>
 
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>AOS.init();</script>
 </body>
 </html>
-
-
