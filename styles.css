@@ -251,6 +251,37 @@ p + p {
     }
 }
 
+@media only screen and (min-width: 620px) {
+    .page-main-content {
+        position: relative;
+        z-index: 1;
+        background-color: var(--primary-color);
+    }
+    .project__img-container img {
+        object-fit: contain;
+        width: 100%;
+        min-height: 100px;
+    }
+    .project__frame {
+        width: 100%;
+        min-height: 100px;
+        background-image: url('./project-frame.webp');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: grid;
+        place-items: center;
+    }
+    .project__frame img {
+        z-index: -1;
+        max-width: 90%;
+        max-height: 90%;
+        height: 440px;
+        object-fit: contain;
+        object-position: 0 66px;
+    }
+}
+
 .project__img-container {
     display: grid;
     place-items: center;
