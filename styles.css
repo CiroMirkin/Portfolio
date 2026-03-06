@@ -199,6 +199,10 @@ p + p {
     background: var(--project-card-color);
 }
 
+.project--more {
+    width: 100%;
+}
+
 .project__texts {
     padding: 6px 16px 16px;
     text-align: left;
@@ -291,6 +295,62 @@ p + p {
 .actions__action:hover {
     background: var(--accent-color);
     text-decoration: underline;
+}
+
+
+details {
+    width: 100%; 
+    max-width: var(--max-width-containers); 
+    margin-inline: auto;
+    
+    transition: all 0.2s ease-in-out;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    background: transparent;
+}
+
+details:hover {
+  background: var(--accent-color);
+}
+
+details[open] {
+  background: transparent;
+  border: var(--border);
+}
+
+details > summary {
+    display: flex;
+    padding: 14px;
+    font-weight: 700;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    text-align: left;
+    color: var(--font-color);
+    
+    width: 100%; 
+    cursor: default;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+}
+
+details .projects--expanded {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: transparent;
+  border-radius: 4px;
+}
+
+.projects--expanded {
+    padding: 0 0 1rem 0 !important;
+}
+
+.project--expanded {
+    margin: 0 !important;
+    border-left: none !important;
+    border-right: none !important;
 }
 
 /* My Content Section */
