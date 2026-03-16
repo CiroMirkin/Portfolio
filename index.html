@@ -173,7 +173,26 @@
 		</div>
 	</footer>
 
+	<!-- AOS -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>AOS.init();</script>
+	<!-- Lenis -->
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script> 
+    <script>
+		const lenis = new Lenis({
+			lerp: 0.075,
+			easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+			direction: 'vertical',
+			gestureDirection: 'vertical',
+			smoothWheel: true,
+		});
+
+		function raf(time) {
+			lenis.raf(time);
+			requestAnimationFrame(raf);
+		}
+
+		requestAnimationFrame(raf);
+    </script>
 </body>
 </html>
