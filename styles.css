@@ -203,6 +203,16 @@ p + p {
     width: 100%;
 }
 
+.project--more details {
+    width: 100%;
+    transition: all 1s ease-in-out;
+}
+
+.project--more details[open] {
+    max-width: 100%;
+    border-color: #20202055 !important;
+}
+
 .project__texts {
     padding: 6px 16px 16px;
     text-align: left;
@@ -279,6 +289,16 @@ p + p {
         height: 440px;
         object-fit: contain;
         object-position: 0 66px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .projects {
+        padding-block: 4rem;
+        flex-direction: row;
+        row-gap: 2rem;
+        column-gap: 4rem;
+        align-items: start;
     }
 }
 
