@@ -296,6 +296,25 @@ p + p {
     .projects {
         padding-block: 4rem;
     }
+
+    .hero-text {
+        width: min(1440px, 94vw);
+        max-width: none;
+        container-type: inline-size;
+    }
+
+    .hero-text h1 {
+        white-space: nowrap;
+        padding-block: 2.5vw;
+        font-size: calc((100cqi - 4vw - 8px) / 6.7);
+        line-height: 1.05;
+    }
+
+    .hero-text h2 {
+        padding-inline-start: 10px;
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
 }
 
 .project__img-container {
