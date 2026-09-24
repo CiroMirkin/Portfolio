@@ -593,6 +593,7 @@ details .projects--expanded {
     width: 100%;
     height: auto;
     padding: 2rem 16px 5rem;
+    border-top: var(--border);
     border-bottom: var(--border);
     display: grid;
     place-items: center;
@@ -617,15 +618,73 @@ details .projects--expanded {
     text-decoration: underline;
 }
 
-.content-card:first-child {
-    margin-bottom: 2rem;
-}
-
 .content-card h3 {
     margin-bottom: 4px;
     font-size: 1.5rem;
     line-height: 1.7rem;
     color: var(--font-color);
+}
+
+.content-card__footer {
+    margin: 14px -14px -14px;
+    padding: 8px 14px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-align: right;
+    border-top: var(--border);
+}
+
+.content-card:hover .content-card__footer {
+    text-decoration: underline;
+}
+
+.study-grid {
+    width: 100%;
+    max-width: var(--max-width-containers);
+    display: grid;
+    gap: 2rem;
+    align-items: start;
+}
+
+.books-card:hover {
+    background: var(--primary-color);
+}
+
+.books-card:hover h3 {
+    text-decoration: none;
+}
+
+.books-list {
+    margin-top: 8px;
+    list-style: none;
+}
+
+.books-list li {
+    padding-block: 8px;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+.books-list li + li {
+    border-top: 1px solid var(--line-color);
+}
+
+.books-list cite {
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.books-list span {
+    display: block;
+    font-size: 1rem;
+}
+
+@media only screen and (min-width: 1000px) {
+    .study-grid {
+        max-width: calc(var(--max-width-containers) * 2);
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* About Me Section */
