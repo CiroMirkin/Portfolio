@@ -599,6 +599,10 @@ details .projects--expanded {
     place-items: center;
 }
 
+.my-content-section .section-title {
+    padding-bottom: 4rem;
+}
+
 .content-card {
     display: inline-block;
     max-width: var(--max-width-containers);
@@ -610,11 +614,18 @@ details .projects--expanded {
     transition: background, text-decoration .500ms ease-out;
 }
 
-.content-card:hover {
+/* Selector reforzado porque AOS pisa transition-property en [data-aos] */
+.study-grid a.content-card[data-aos] {
+    transition-property: opacity, transform, background-color;
+    transition-duration: .4s, .4s, .3s;
+    transition-timing-function: ease, ease, ease-out;
+}
+
+a.content-card:hover {
     background: var(--accent-color);
 }
 
-.content-card:hover h3 {
+a.content-card:hover h3 {
     text-decoration: underline;
 }
 
@@ -627,14 +638,20 @@ details .projects--expanded {
 
 .content-card__footer {
     margin: 14px -14px -14px;
+    width: calc(100% + 28px);
+    justify-content: flex-end;
+}
+
+.content-card__footer .actions__action {
     padding: 8px 14px;
     font-size: 1.2rem;
     line-height: 1.6rem;
-    text-align: right;
-    border-top: var(--border);
+    border-left: var(--border);
+    border-right: none;
+    background: var(--project-card-color);
 }
 
-.content-card:hover .content-card__footer {
+a.content-card:hover .content-card__footer .actions__action {
     text-decoration: underline;
 }
 
@@ -646,12 +663,11 @@ details .projects--expanded {
     align-items: start;
 }
 
-.books-card:hover {
-    background: var(--primary-color);
-}
-
-.books-card:hover h3 {
-    text-decoration: none;
+@media only screen and (min-width: 1000px) {
+    .study-grid {
+        max-width: calc(var(--max-width-containers) * 2);
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .books-list {
@@ -680,12 +696,6 @@ details .projects--expanded {
     font-size: 1rem;
 }
 
-@media only screen and (min-width: 1000px) {
-    .study-grid {
-        max-width: calc(var(--max-width-containers) * 2);
-        grid-template-columns: 1fr 1fr;
-    }
-}
 
 /* About Me Section */
 .about-me-section {
@@ -741,7 +751,7 @@ details .projects--expanded {
 /* Footer Section */
 .footer-section {
     width: 100%;
-    padding: 2rem;
+    padding: 2rem 2rem 5rem;
     display: grid;
     place-items: center;
     border-bottom: var(--border);
